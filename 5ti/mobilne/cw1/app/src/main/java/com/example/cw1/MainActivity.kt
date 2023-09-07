@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val secondText = findViewById<TextView>(R.id.toClick)
         secondText.setOnClickListener {
-            
+            secondText.setText("Po kliknięciu.....")
         }
     }
 }
