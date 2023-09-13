@@ -11,7 +11,6 @@ namespace cw1_powtorka.Controllers
             _configuration = configuration;
             string connString = configuration.GetConnectionString("MySqlConn");
             _placeRepo = new PlaceRepo(connString);
-            _placeRepo.GetPlaces();
         }
         public IActionResult Index()
         {
@@ -23,6 +22,8 @@ namespace cw1_powtorka.Controllers
         }
         public IActionResult Baza()
         {
+            
+            ViewBag.places = _placeRepo.GetPlaces();
             return View();
         }
     }

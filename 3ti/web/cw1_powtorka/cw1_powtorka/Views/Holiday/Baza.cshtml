@@ -9,8 +9,30 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Baza</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
 </head>
 <body>
 <h2>Tu będą dane z bazy danych...</h2>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>Lp  </th>
+            <th>Miejsce  </th>
+            <th>Termin  </th>
+            <th >Cena  </th>
+        </tr>
+        @{ int lp = 0;}
+        @foreach (Place row in ViewBag.places) {
+            lp++;
+            <tr>
+                <td>@lp</td>
+                <td>@row.Name</td>
+                <td>@row.DateStart.ToShortDateString()</td>
+                    <td class="text-end">@row.Price</td>
+
+            </tr>
+        }
+    </table>
+</div>
 </body>
 </html>

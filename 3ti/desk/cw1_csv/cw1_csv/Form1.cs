@@ -13,10 +13,9 @@ namespace cw1_csv
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 var result = Converter.CSVFileToList(openFileDialog1.FileName);
-                foreach (var row in result) {
-                    dataGridView1.Rows.Add(row);
-                }
-                
+                dataGridView1.DataSource = result;
+               
+
             }
         }
     }
