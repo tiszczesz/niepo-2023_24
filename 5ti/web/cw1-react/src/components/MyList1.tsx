@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 type Props = {}
 
@@ -10,6 +10,7 @@ const MyList1 = (props: Props) => {
         "Pochwalić się lub nie z efektu pracy",
         "zjeść porządnie"
     ];
+   
     return (
         <>
             <div>Moja lista do zrobienia</div>
