@@ -1,4 +1,4 @@
-﻿
+﻿@model Reader
 @{
     Layout = null;
 }
@@ -16,20 +16,20 @@
 </div>
 <div id="lewy">
     <h2>Dodaj czytelnika</h2>
-    <form action="biblioteka.php" method="post">
+    <form asp-action="Index">
         <label>
             imię:
-            <input type="text" name="imie" /><br/>
+            <input asp-for="FirstName" /><br/>
         </label>
         <label>
             nazwisko:
-            <input type="text" name="nazwisko" /><br/>
+            <input asp-for="LastName" /><br/>
         </label>
         <label>
             rok urodzenia:
-            <input type="number" name="rok" /><br/>
+            <input asp-for="Year" /><br/>
         </label>
-        <button>DODAJ</button>
+        <input type="submit" value="DODAJ"/>
     </form>
  
 </div>
@@ -45,7 +45,9 @@
 <div id="prawy">
     <h3>Nasi czytelnicy</h3>
     <ul>
-        
+        @foreach (var elem in ViewBag.list) {
+            <li>@elem.LastName @elem.FirstName</li>
+        }
     </ul>
 </div>
 <div id="stopka">
