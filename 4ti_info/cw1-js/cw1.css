@@ -1,0 +1,9 @@
+.container{
+    margin: 20px;
+    padding: 8px;
+}
+.border{
+    padding: 5px;
+    border: solid 1px grey;
+    border-radius: 10px;
+}
