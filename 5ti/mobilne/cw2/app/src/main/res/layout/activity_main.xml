@@ -31,18 +31,19 @@
 
         <TextView
             android:id="@+id/textViewA"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Poda a:" />
+            android:text="Podaj a:"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editTextNumberA"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="2"
+
+            android:inputType="numberDecimal|numberSigned" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,17 +52,34 @@
 
         <TextView
             android:id="@+id/textViewB"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Poda b:" />
+            android:text="Podaj b:"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editTextNumberB"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:layout_weight="2"
+
+            android:inputType="numberDecimal|numberSigned"
+             />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="dodaj liczby"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp" />
 </LinearLayout>
