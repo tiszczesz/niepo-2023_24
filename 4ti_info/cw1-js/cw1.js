@@ -18,4 +18,4 @@ const Book1 = {
 }
 const Film1 = {};
 document.querySelector("#p1").innerHTML = Book1.show();
-document.querySelector("#p2").innerHTML = Film1.show();
+document.querySelector("#p2").innerHTML = Film1.showFilm();
