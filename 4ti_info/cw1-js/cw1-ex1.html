@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ćwiczenie 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="cw1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="mb-3">
+            <label for="firstname" class="form-label">Podaj imię</label>
+            <input type="text"  id="firstname" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="lastname" class="form-label">Podaj nazwisko</label>
+            <input type="text"  id="lastname" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="division" class="form-label">wybierz klasę</label>
+            <select id="division" class="form-control" >
+                <option value="1A">1A</option>
+                <option value="1B">1B</option>
+                <option value="1C">1C</option>
+                <option value="1TI">1TI</option>
+            </select>
+        </div>
+        <input type="button" value="zapisz" class="btn btn-primary w-100">
+      </form>
+    </div>
+    <script src="cw1-ex1.js" defer></script>
+  </body>
+</html>
