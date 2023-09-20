@@ -7,12 +7,15 @@ public class Converter {
         var lines = new List<string[]>();
         var fromFile = File.ReadAllLines(filename).ToList();
         if (!IsCorrectCSV(fromFile)) return null;
-        foreach (var line in fromFile) lines.Add(line.Split(';'));
+        foreach (var line in fromFile) 
+            lines.Add(line.Split(';'));
         var dt = new DataTable();
         if (lines.Count > 0) {
-            foreach (var column in lines[0]) dt.Columns.Add(column);
+            foreach (var column in lines[0]) 
+                dt.Columns.Add(column);
 
-            for (var i = 1; i < lines.Count; i++) dt.Rows.Add(lines[i]);
+            for (int i = 1; i < lines.Count; i++)
+                dt.Rows.Add(lines[i]);
             return dt;
         }
         return null;
