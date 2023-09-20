@@ -13,9 +13,12 @@ namespace cw1_csv
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
                 var result = Converter.CSVFileToList(openFileDialog1.FileName);
-                dataGridView1.DataSource = result;
-               
-
+                if (result != null) {
+                    dataGridView1.DataSource = result;
+                }
+                else {
+                    MessageBox.Show("B³êdy format pliku CSV!!");
+                }
             }
         }
     }

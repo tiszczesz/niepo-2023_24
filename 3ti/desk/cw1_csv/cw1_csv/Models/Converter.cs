@@ -1,31 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 
-namespace cw1_csv.Models
-{
-    public class Converter
-    {
-        public Converter() { }
+namespace cw1_csv.Models; 
 
-        public static DataTable CSVFileToList(string filename) {
-            List<string[]> lines = new List<string[]>();
-            var fromFile = File.ReadAllLines(filename).ToList();
-            foreach (var line in fromFile) {
-                lines.Add(line.Split(';'));
-            }
-            DataTable dt = new DataTable();
-            foreach (var column in lines[0]) {
-                dt.Columns.Add(column);
-            }
+public class Converter {
+    public static DataTable? CSVFileToList(string filename) {
+        var lines = new List<string[]>();
+        var fromFile = File.ReadAllLines(filename).ToList();
+        foreach (var line in fromFile) lines.Add(line.Split(';'));
+        var dt = new DataTable();
+        if (lines.Count > 0) {
+            foreach (var column in lines[0]) dt.Columns.Add(column);
 
-            for (int i = 1; i < lines.Count; i++) {
-                dt.Rows.Add(lines[i]);
-            }
+            for (var i = 1; i < lines.Count; i++) dt.Rows.Add(lines[i]);
             return dt;
         }
+
+        return null;
+
+
     }
 }
