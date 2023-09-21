@@ -31,9 +31,21 @@ namespace ark1.Models
             return readers;
         }
 
-        internal void AddReader(Reader reader)
+        public void AddReader(Reader reader)
         {
-            throw new NotImplementedException();
+            using (MySqlConnection conn = new MySqlConnection(_connString))
+            {
+                conn.Open();
+                MySqlCommand command = conn.CreateCommand();
+                command.CommandText = "INSERT INTO czytelnicy(imie,nazwisko, kod)"
+                                      +" VALUES(@firstname,@lastname,@code)";
+                command.Parameters.Add("@firstname", MySqlDbType.String).Value = reader.FirstName;
+                command.Parameters.Add("@lastname", MySqlDbType.String).Value = reader.LastName;
+                command.Parameters.Add("@code", MySqlDbType.String).Value = reader.Code;
+                command.ExecuteNonQuery();
+
+
+            }
         }
     }
 }

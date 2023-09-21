@@ -21,11 +21,15 @@ public class LibraryController : Controller {
     [HttpPost]
     public IActionResult Index(Reader reader) {
         if (ModelState.IsValid) {
+            string code = reader.FirstName.Substring(0,2).ToLower()+
+                          reader.Year.ToString().Substring(reader.Year.ToString().Length-2)
+                          + reader.LastName.Substring(0, 2).ToLower();
+            reader.Code = code;
             _repo.AddReader(reader);
         }
 
         var list = _repo.GetAllReaders();
         ViewBag.list = list;
-        return View();
+        return View(reader);
     }
 }
