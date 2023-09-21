@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">cw2</string>
+    <string name="selected_item">Wybrane działanie</string>
+    <string-array name="tasks">
+        <item>dodawanie +</item>
+        <item>odejmowanie -</item>
+        <item>mnożenie *</item>
+        <item>dzielenie /</item>
+    </string-array>
 </resources>
