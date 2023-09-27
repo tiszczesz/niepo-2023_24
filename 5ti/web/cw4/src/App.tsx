@@ -5,7 +5,7 @@ function App() {
   return (
    <div className="container">
     <h1>Ćwiczenie 4</h1>
-    <FilmList color='red' films={emptyFilms} />
+    <FilmList color='red' films={films} />
    </div>
   );
 }
