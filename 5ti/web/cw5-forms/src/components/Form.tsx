@@ -16,8 +16,7 @@ const Form = (props: Props) => {
             lastnameRef.current !== null  &&
             ageRef.current !== null  &&
             dateRef.current !== null ){
-                student.firstname = firstnameRef.current.value;
-                console.log(student);
+                
                 
             }
     }
