@@ -1,10 +1,16 @@
-import React, { FormEvent, useRef } from 'react'
+import React, { FormEvent, useRef, useState } from 'react'
 
 type Props = {}
+interface Student {
+    firstname: string;
+    lastname: string;
+    age: number;
+    date: Date;
+}
 
 const Form = (props: Props) => {
-
-    const student = { firstname: '', lastname: '', age: 0, date: new Date() }
+    const [students, setStudents] = useState<Student[]>([])
+    const student: Student = { firstname: '', lastname: '', age: 0, date: new Date() }
     const firstnameRef = useRef<HTMLInputElement>(null);
     const lastnameRef = useRef<HTMLInputElement>(null);
     const ageRef = useRef<HTMLInputElement>(null);
@@ -28,7 +34,7 @@ const Form = (props: Props) => {
     }
 
     return (<div className='d-flex justify-content-around'>
-        <form onSubmit={handleSubmit}>
+        <form className='w-50' onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="" className="form-label">Imię</label>
                 <input ref={firstnameRef} type="text" className="form-control" />
@@ -47,7 +53,28 @@ const Form = (props: Props) => {
             </div>
             <button className='btn btn-primary w-100' type='submit'>Zapisz</button>
         </form>
-        <div id="result"></div>
+        <div id="result" className='w-50'>
+            {students.length === 0 ? <p>Lista studentów jest pusta</p> :
+                <table className='table table-stripped'>
+                    <thead>
+                        <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Wiek</th>
+                        <th>Data rejestracji</th>
+                    </tr></thead>
+                    <tbody>
+                        {students.map((s)=>(<tr>
+                            <td>{s.firstname}</td>
+                            <td>{s.lastname}</td>
+                            <td>{s.age}</td>
+                            <td>{s.date.toLocaleDateString()}</td>
+                        </tr>))}
+                    </tbody>
+
+                </table>
+            }
+        </div>
     </div>
 
     )
