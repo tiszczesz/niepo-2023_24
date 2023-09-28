@@ -27,9 +27,10 @@ const Form = (props: Props) => {
             student.age = parseInt(ageRef.current.value);
             student.date = new Date(dateRef.current.value);
             console.log(student);
-            (document.querySelector("#result") as HTMLDivElement)
-                .innerHTML = `imię ${student.firstname} nazwisko: ${student.lastname}
-                    wiek: ${student.age} data rejestracji: ${student.date.toLocaleDateString()}`
+            // (document.querySelector("#result") as HTMLDivElement)
+            //     .innerHTML = `imię ${student.firstname} nazwisko: ${student.lastname}
+            //         wiek: ${student.age} data rejestracji: ${student.date.toLocaleDateString()}`
+            setStudents([...students,student]);
         }
     }
 
@@ -55,7 +56,7 @@ const Form = (props: Props) => {
         </form>
         <div id="result" className='w-50'>
             {students.length === 0 ? <p>Lista studentów jest pusta</p> :
-                <table className='table table-stripped'>
+                <table className='table table-striped'>
                     <thead>
                         <tr>
                         <th>Imię</th>
@@ -64,7 +65,7 @@ const Form = (props: Props) => {
                         <th>Data rejestracji</th>
                     </tr></thead>
                     <tbody>
-                        {students.map((s)=>(<tr>
+                        {students.map((s,k)=>(<tr key={k}>
                             <td>{s.firstname}</td>
                             <td>{s.lastname}</td>
                             <td>{s.age}</td>
