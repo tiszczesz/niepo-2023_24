@@ -35,22 +35,22 @@ const Form = (props: Props) => {
     }
 
     return (<div className='d-flex justify-content-around'>
-        <form className='w-50' onSubmit={handleSubmit}>
+        <form className='w-50 p-2' onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="" className="form-label">Imię</label>
-                <input ref={firstnameRef} type="text" className="form-control" />
+                <input ref={firstnameRef} type="text" className="form-control" required/>
             </div>
             <div className="mb-3">
                 <label htmlFor="" className="form-label">Nazwisko</label>
-                <input ref={lastnameRef} type="text" className="form-control" />
+                <input ref={lastnameRef} type="text" className="form-control" required/>
             </div>
             <div className="mb-3">
                 <label htmlFor="" className="form-label">Wiek</label>
-                <input ref={ageRef} type="number" className="form-control" />
+                <input ref={ageRef} type="number" className="form-control" required/>
             </div>
             <div className="mb-3">
                 <label htmlFor="" className="form-label">Data rejestracji</label>
-                <input ref={dateRef} type="date" className="form-control" />
+                <input ref={dateRef} type="date" className="form-control" required/>
             </div>
             <button className='btn btn-primary w-100' type='submit'>Zapisz</button>
         </form>
