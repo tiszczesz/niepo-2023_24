@@ -10,4 +10,7 @@ p3.Show();
 Console.WriteLine(p1);
 Console.WriteLine(p1.GetHashCode());
 Console.WriteLine(p2.GetHashCode());
+p1.Firstname = "fffff"; //hermetyzacja
+Console.WriteLine(p1);
+Console.WriteLine($" wiek osoby: {p2.GetAge()}");
 
