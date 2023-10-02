@@ -1,0 +1,25 @@
+header{
+    text-align: center;
+    margin: 20px;
+    background-color: bisque;
+    color: brown;
+    font-weight: bold;
+    padding: 20px;
+}
+.container{
+    margin: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    
+}
+nav{
+    width: 200px;   
+    margin-left: 20px;
+}
+nav div.menu-item a{
+    text-decoration: none;
+    color: chocolate;
+    font-size: 1.4em;
+}
