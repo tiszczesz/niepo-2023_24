@@ -16,14 +16,14 @@ public class Person
     private DateTime birthDay;
     public Person(string firstname,string lastname,DateTime birthDay)//przeciazanie konstruktorow
     {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.birthDay = birthDay;
+        Firstname = firstname;
+        Lastname = lastname;
+        BirthDay = birthDay;
     }
     public Person(){   //przeciazanie konstruktorow
-        this.firstname = "Adam";
-        this.lastname = "Kowalski";
-        this.birthDay = new DateTime(2000,1,1);
+        Firstname = "Adam";
+        Lastname = "Kowalski";
+        BirthDay = new DateTime(2000,1,1);
     }
     
     override public string? ToString(){ //nadpisanie Tostring z Object!!!!
@@ -51,6 +51,22 @@ public class Person
         }
         set{
             firstname = value.ToUpper();
+        }
+    }
+    public string Lastname{
+        get{
+            return lastname;
+        }
+        set{
+            lastname = value.ToUpper();
+        }
+    }
+    public DateTime BirthDay{
+        get{
+            return birthDay.ToShortDateString()
+        }
+        set{
+            birthDay = value;
         }
     }
 }
