@@ -14,59 +14,74 @@ public class Person
     private string firstname;
     private string lastname;
     private DateTime birthDay;
-    public Person(string firstname,string lastname,DateTime birthDay)//przeciazanie konstruktorow
+    public Person(string firstname, string lastname, DateTime birthDay)//przeciazanie konstruktorow
     {
         Firstname = firstname;
         Lastname = lastname;
         BirthDay = birthDay;
     }
-    public Person(){   //przeciazanie konstruktorow
+    public Person()
+    {   //przeciazanie konstruktorow
         Firstname = "Adam";
         Lastname = "Kowalski";
-        BirthDay = new DateTime(2000,1,1);
+        BirthDay = new DateTime(2000, 1, 1);
     }
+
+
     public string Place { get; set; } //miejsce  autoproperty
-    
-    override public string? ToString(){ //nadpisanie Tostring z Object!!!!
+
+    override public string? ToString()
+    { //nadpisanie Tostring z Object!!!!
         return $"Nadpisane!!!! Imie: {firstname} Nazwisko: {lastname} Data urodzenia: {birthDay.ToShortDateString()}";
     }
-    public void Show(){
+    public void Show()
+    {
         Console.WriteLine($"Imie: {firstname} Nazwisko: {lastname} Data urodzenia: {birthDay.ToShortDateString()}");
     }
     // public override int GetHashCode()
     // {
     //     return 999999;
     // }
-    public int GetAge(){
+    public int GetAge()
+    {
         //return DateTime.Now.Year - birthDay.Year;
-        return (DateTime.Now - birthDay).Days/365;
+        return (DateTime.Now - birthDay).Days / 365;
     }
     // public void  SetFirstname(string firstname){
     //     this.firstname = firstname.ToUpper();
     // }
 
     //proprty
-    public string Firstname{
-        get{
+    public string Firstname
+    {
+        get
+        {
             return firstname;
         }
-        set{
+        set
+        {
             firstname = value.ToUpper();
         }
     }
-    public string Lastname{
-        get{
+    public string Lastname
+    {
+        get
+        {
             return lastname;
         }
-        set{
+        set
+        {
             lastname = value.ToUpper();
         }
     }
-    public DateTime BirthDay{
-        get{
+    public DateTime BirthDay
+    {
+        get
+        {
             return birthDay;
         }
-        set{
+        set
+        {
             birthDay = value;
         }
     }
