@@ -25,6 +25,7 @@ public class Person
         Lastname = "Kowalski";
         BirthDay = new DateTime(2000,1,1);
     }
+    public string Place { get; set; } //miejsce  autoproperty
     
     override public string? ToString(){ //nadpisanie Tostring z Object!!!!
         return $"Nadpisane!!!! Imie: {firstname} Nazwisko: {lastname} Data urodzenia: {birthDay.ToShortDateString()}";
@@ -63,7 +64,7 @@ public class Person
     }
     public DateTime BirthDay{
         get{
-            return birthDay.ToShortDateString()
+            return birthDay;
         }
         set{
             birthDay = value;
