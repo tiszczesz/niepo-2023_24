@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Exercise1 from "./Exercises/Exercise1"
 import Exercise2 from "./Exercises/Exercise2"
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 function App() {
