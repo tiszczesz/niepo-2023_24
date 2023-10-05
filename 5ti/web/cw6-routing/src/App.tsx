@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 function App() {
+  console.log("rendering App .....");
   
 
   return (
