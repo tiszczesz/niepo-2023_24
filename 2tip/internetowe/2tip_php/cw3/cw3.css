@@ -1,0 +1,11 @@
+table{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th{
+    border: solid 1px gray;
+    padding: 5px;
+    text-align: center;
+}
+.gray{background-color: lightgray;}
