@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div>
+        <a href="cw1_insert.html">dodaj nową wycieczkę</a>
+    </div>
     <?php
     $conn = new mysqli("localhost", "root", null, "3ti_2023_24_cw1");
     if ($conn->connect_errno) {
@@ -25,10 +28,12 @@
     // var_dump($result->fetch_object());
     // var_dump($result->fetch_all());
     echo '<table class="table table-striped">';
-    echo "<tr> <th>Lp</th><th>Miasto</th><th>Cena</th><th>Termin</th></tr><br />";
+    echo "<tr> <th>Lp</th><th>Miasto</th><th>Cena</th><th>Termin</th><th> ------ </th></tr><br />";
     $lp=1;
     while($row = $result->fetch_array()){
-        echo "<tr><td>{$lp}</td><td>{$row[1]}</td><td class='text-end'>{$row[2]}</td> <td>{$row[3]}</td> </tr>";
+        echo "<tr><td>{$lp}</td><td>{$row[1]}</td><td class='text-end'>{$row[2]}</td> <td>{$row[3]}</td>"
+           ."<td><a  class='btn btn-secondary m-1' href='delete.php?id={$row[0]}'>Usuń</a>"
+           ."<a class='btn btn-danger m-1' href='edit.php?id={$row[0]}'>Edytuj</a></td> </tr>";
         $lp++;
     }
     echo '</table>';

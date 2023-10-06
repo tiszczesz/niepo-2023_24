@@ -35,7 +35,7 @@
                         $id = -1;
                     }                   
                     $students = getStudents($id);
-                    var_dump($students);
+                    echo studentsToTabHTML($students,$id);
                 ?>
                 <!-- </pre> -->
             </section>

@@ -23,3 +23,25 @@ nav div.menu-item a{
     color: chocolate;
     font-size: 1.4em;
 }
+table{
+    width: 80%;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 6px;
+    border: solid 1px brown;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+th{
+    background-color: blanchedalmond;
+    color: brown;
+}
+.right{
+    text-align: right;
+}
+#content{
+    margin-left: 20px;
+    width: 100%;
+}
