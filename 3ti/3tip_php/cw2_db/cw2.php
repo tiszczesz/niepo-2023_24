@@ -24,6 +24,8 @@
                     echo "<div class='menu-item'> <a href='cw2.php?id={$elem['id']}'>{$elem['name']}</a></div>";
                 }
                 ?>
+                <div class='menu-item'> <a href='cw2_add.php'>Dodaj do kursu</a></div>
+                <div class='menu-item'> <a href='cw2__division.php'>Dodaj nowy kurs</a></div>
             </nav>
             <section id="content">
                 <!-- <pre> -->

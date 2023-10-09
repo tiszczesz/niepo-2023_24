@@ -21,6 +21,16 @@ function getDivisions(): array
   $conn->close();
   return $divisions;
 }
+
+function divisionToList(array $divisions,string $genre="option"):string {
+  $html = "";
+  foreach($divisions as $d){
+    $html .= "\t<option value='{$d[0]}'>{$d[1]}</option>\n";
+  }
+  return $html;
+}
+
+
 function getStudents(int $id = -1): array
 {
 
@@ -61,4 +71,16 @@ TEXT;
     $html .= "\t<tr><td class='right'>{$lp}</td><td>{$s[1]}</td><td>{$s[2]}</td><td>{$s[3]}</td></tr>\n";
   }
   return $html."</tbody>\n</table>\n";
+}
+
+function insertStudent(array $data):bool {
+  $conn = getConnection();
+  if ($conn == null) die("ERROR DB CONNECTIOM!!!");
+  $sqlInsert = "INSERT INTO student(firstname,lastname,division_id) "
+      ." VALUES('{$data[0]}','{$data[1]}',{$data[2]})";
+  //echo $sqlInsert;
+  $result = $conn->query($sqlInsert);
+  $conn->close();
+  return $result;
+  
 }
