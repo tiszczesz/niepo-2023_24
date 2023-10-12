@@ -4,6 +4,7 @@ import Exercise1 from "./Exercises/Exercise1"
 import Exercise2 from "./Exercises/Exercise2"
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Exercise3 from "./Exercises/Exercise3";
+import Exercise4 from "./Exercises/Exercise4";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/cw1" element={<Exercise1 />}  />
         <Route path="/cw2" element={<Exercise2 />}  />
         <Route path="/cw3" element={<Exercise3 />}  />
+        <Route path="/cw4" element={<Exercise4 />}  />
       </Routes>
      </div>
     </>
