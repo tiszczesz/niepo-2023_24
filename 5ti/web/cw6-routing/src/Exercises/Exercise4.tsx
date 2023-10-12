@@ -12,7 +12,17 @@ export interface User{
 
 const Exercise4 = () => {
     const [users,setUsers] = useState<User[]>([]);
-    const [loading,setLoading] = useState(true);
+    const [loading,setLoading] = useState(true);    
+    const removeUser = (id:number)=>{
+        console.log("usuwanie: "+id);
+        console.log(users);
+        
+        const removed = users.filter((elem)=>{
+            return elem.id!==id
+        })
+        setUsers([...removed])
+        console.log(removed);
+    }
     useEffect(()=>{
         console.log("rendering Exercise4.....");        
         axios.get<User[]>('https://jsonplaceholder.typicode.com/users')
@@ -25,7 +35,8 @@ const Exercise4 = () => {
     },[])
   return (
     <div className="container">
-        {loading?<p className="spinner-border"></p> :<UserList users={users} />}
+        {loading?<p className="spinner-border"></p> 
+        :<UserList users={users} clickHandler={(id)=>removeUser(id)}/>}
         
     </div>
   )

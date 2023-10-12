@@ -2,10 +2,11 @@
 import { User } from '../Exercises/Exercise4'
 
 type PropsUserList = {
-    users: User[]
+    users: User[];
+    clickHandler:(id:number)=>void
 }
 
-const UserList = ({users}: PropsUserList) => {
+const UserList = ({users,clickHandler}: PropsUserList) => {
     return (
         <>
             <div>Lista użytkowników</div>
@@ -14,7 +15,7 @@ const UserList = ({users}: PropsUserList) => {
                     <li className='list-group-item d-flex justify-content-between' key={el.id}>
                        <span> Nazwa: {el.name} username: {el.username}
                         email: {el.email}</span>
-                        <button className='btn btn-secondary'>X</button>
+                        <button onClick={()=>clickHandler(el.id)} className='btn btn-secondary'>X</button>
 
                     </li>
                 ))}
