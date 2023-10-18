@@ -20,7 +20,7 @@ const Exercise4 = () => {
         const removed = users.filter((elem)=>{
             return elem.id!==id
         })
-        setUsers([...removed])
+        setUsers(removed)
         console.log(removed);
     }
     useEffect(()=>{

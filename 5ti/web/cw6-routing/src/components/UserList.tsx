@@ -16,7 +16,6 @@ const UserList = ({users,clickHandler}: PropsUserList) => {
                        <span> Nazwa: {el.name} username: {el.username}
                         email: {el.email}</span>
                         <button onClick={()=>clickHandler(el.id)} className='btn btn-secondary'>X</button>
-
                     </li>
                 ))}
             </ul>
