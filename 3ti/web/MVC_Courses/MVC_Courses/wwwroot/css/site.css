@@ -16,12 +16,12 @@ header {
     flex-direction: row;
 }
 
-nav {
+.my-nav {
     width: 200px;
     margin-left: 20px;
 }
 
-nav div.menu-item a {
+.my-nav div.menu-item a {
     text-decoration: none;
     color: chocolate;
     font-size: 1.4em;

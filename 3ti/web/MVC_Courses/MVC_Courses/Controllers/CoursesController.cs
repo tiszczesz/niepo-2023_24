@@ -11,8 +11,10 @@ namespace MVC_Courses.Controllers
 
         }
         public IActionResult Index() {
-            var courses = repo.GetDivisions();
-            return View();
+           var divisions = repo.GetDivisions();
+            return View(divisions);
         }
+
+      
     }
 }
