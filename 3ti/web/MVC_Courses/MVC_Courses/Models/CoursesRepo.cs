@@ -33,5 +33,12 @@ namespace MVC_Courses.Models
 
             return divisions;
         }
+
+        public List<Student> GetStudents(int? id) {
+            List<Student> students = new List<Student>();
+
+
+            return students;
+        }
     }
 }

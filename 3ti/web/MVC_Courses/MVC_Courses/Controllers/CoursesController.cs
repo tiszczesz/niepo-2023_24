@@ -10,9 +10,11 @@ namespace MVC_Courses.Controllers
             repo = new CoursesRepo(configuration.GetConnectionString("MySqlConn"));
 
         }
-        public IActionResult Index() {
-           var divisions = repo.GetDivisions();
-            return View(divisions);
+        public IActionResult Index(int? id) {
+           //var divisions = repo.GetDivisions();
+           ViewBag.courses = repo.GetDivisions();
+           List<Student> students = repo.GetStudents(id);
+            return View(students);
         }
 
       

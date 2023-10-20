@@ -1,7 +1,14 @@
-﻿@model List<Division>
+﻿
 
-<ul class="list-group">
-    @foreach (var c in Model) {
-        <li class="list-group-item">@c.Name</li>
+<div class="list-group">
+    @foreach (Division c in ViewBag.courses)
+    {
+        <a asp-route-id="@c.Id" 
+           style=""
+           class="btn btn-outline-success m-2 w-100">
+        
+        @c.Name
+
+        </a>
     }
-</ul>
+</div>
