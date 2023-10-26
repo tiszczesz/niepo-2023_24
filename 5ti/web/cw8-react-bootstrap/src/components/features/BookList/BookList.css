@@ -1,0 +1,7 @@
+.booklist-image{
+    cursor: pointer;
+    padding: 10px;
+}
+.booklist-image:hover{
+    background-color: rgb(209, 215, 196);
+}

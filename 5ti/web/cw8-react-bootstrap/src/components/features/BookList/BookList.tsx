@@ -1,13 +1,16 @@
 
-import React from 'react'
-import { Book } from '../../../interfaces/book'
-import { Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap'
+import React from 'react';
+import { Book } from '../../../interfaces/book';
+import { Col, ListGroup, Row } from 'react-bootstrap';
+import Delete from '../../../delete.png';
+import './BookList.css';
 
 type BookListProps = {
   books:Book[],
+  deleteBook:(id:string)=>void
 }
 
-const BookList = ({books}: BookListProps) => {
+const BookList = ({books,deleteBook}: BookListProps) => {
   return (
     <div>
       <h2>Lista książek</h2>
@@ -18,7 +21,10 @@ const BookList = ({books}: BookListProps) => {
               <Col md={6}>
                 {book.title} {book.author} {book.price} zł
               </Col>
-              <Col></Col>
+              <Col md={{ span:1, offset:5}}>
+              <img src={Delete} alt="kosz" className='booklist-image' 
+              onClick={(event)=>deleteBook(book.id)}/>
+              </Col>
             </Row>
           </ListGroup.Item>
         )))}
