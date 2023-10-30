@@ -9,6 +9,14 @@ $(function () {
     console.log(p11);
     Deley(2000);
     Deley2(3000);
+
+
+    //obsluga przycisku 
+    //document.querySelector("#Save").onclick = ...
+    $("#Save").click(function(event){
+        alert(event.target);
+    });
+
 });
 
 function Deley(time){
