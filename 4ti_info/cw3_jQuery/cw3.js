@@ -14,7 +14,15 @@ $(function () {
     //obsluga przycisku 
     //document.querySelector("#Save").onclick = ...
     $("#Save").click(function(event){
-        alert(event.target);
+        //alert(event.target);
+        const firstname = $("#firstname").val();
+        console.log($("#firstname"));
+        if(firstname.trim().length===0){
+            $("#result").html("Nie podałeś imienia");
+            return;
+        }
+        $("#result")
+         .html(`Witaj ${firstname} dzisiaj mamy: ${new Date().toLocaleDateString()}`);//witaj imie dzisiaj mamy: data
     });
 
 });
