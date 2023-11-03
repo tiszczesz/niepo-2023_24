@@ -5,3 +5,25 @@
 
 <h1>Ilość studentów: @Model?.Count</h1>
 
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Lp</th>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Grupa</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    @{ int lp = 0;}
+    @foreach (var s in Model) {
+        lp++;
+        <tr>
+                <td><@lp /td>
+                <td><@s.Firstname /td>
+                <td><@s.Lastname /td>
+        </tr>
+    }
+    </tbody>
+</table>

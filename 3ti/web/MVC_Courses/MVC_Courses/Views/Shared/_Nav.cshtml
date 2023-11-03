@@ -1,9 +1,10 @@
 ﻿
 
 <div class="list-group">
+    @* <a href="strona.php?id=c.id"*@
     @foreach (Division c in ViewBag.courses)
     {
-        <a asp-route-id="@c.Id" 
+        <a asp-route-id="@c.Id"     
            style=""
            class="btn btn-outline-success m-2 w-100">
         

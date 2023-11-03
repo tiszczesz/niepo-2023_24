@@ -36,7 +36,32 @@ namespace MVC_Courses.Models
 
         public List<Student> GetStudents(int? id) {
             List<Student> students = new List<Student>();
-
+            using (MySqlConnection conn = new MySqlConnection(_connString))
+            {
+                MySqlCommand command = conn.CreateCommand();
+                //string sqlQuery = "SELECT * FROM divisions";
+                string sql = id == null
+                    ? "SELECT * FROM student"
+                    : $"SELECT * FROM student where division_id={id}";
+                command.CommandText = sql;
+                conn.Open();
+                MySqlDataReader rd = command.ExecuteReader();
+                if (rd.HasRows)
+                {
+                    while (rd.Read())
+                    {
+                       students.Add(
+                           new Student {
+                               Id = rd.GetInt32(0),
+                               Firstname = rd.GetString(1),
+                               Lastname = rd.GetString(2),
+                               Division_id = rd.GetInt32(3)
+                           }
+                           );
+                    }
+                }
+                conn.Close();
+            }
 
             return students;
         }
