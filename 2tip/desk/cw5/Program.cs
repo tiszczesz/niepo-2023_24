@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using cw5;
+
+FilmsRepo repo = new FilmsRepo();
+
+var films = repo.GetAllFilms();
