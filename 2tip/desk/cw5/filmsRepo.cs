@@ -15,8 +15,24 @@ public class FilmsRepo
     public List<Film> GetAllFilms(){
         List<Film> films = new List<Film>();
         SqliteConnection connection = new SqliteConnection(connString);
+        SqliteCommand command = connection.CreateCommand();
+        command.CommandText = "SELECT * FROM films";        
         connection.Open();
-        Console.WriteLine(connection.State);
+        SqliteDataReader rd = command.ExecuteReader();
+        if(rd.HasRows){
+            while(rd.Read()){
+                films.Add(
+                    new Film{
+                        Id = rd.GetInt32(0),
+                        Title = rd.GetString(1),
+                        Director = rd.GetString(2),
+                        Price = rd.GetDecimal(3),
+                        Description = rd.GetString(4)
+                    }
+                );
+            }
+        }
+        
 
         connection.Close();
         return films;
