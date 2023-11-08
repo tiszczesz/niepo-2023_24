@@ -1,4 +1,6 @@
 ﻿
+
+using System.Globalization;
 using Microsoft.Data.Sqlite;
 
 namespace cw5;
@@ -36,6 +38,16 @@ public class FilmsRepo
 
         connection.Close();
         return films;
+    }
+    public bool InsertFilm(Film? film){
+        if(film==null) return false;
+        SqliteConnection connection = new SqliteConnection(connString);
+        SqliteCommand command = connection.CreateCommand();
+        command.CommandText = $"INSERT INTO films(title,director,price,description)"+
+                     $" VALUES(\"{film.Title}\",\"{film.Director}\","
+                     +film.Price?.ToString(CultureInfo.InvariantCulture)+ $",\"{film.Description}\")";
+        Console.WriteLine(command.CommandText);
+        return true;
     }
 
 }
