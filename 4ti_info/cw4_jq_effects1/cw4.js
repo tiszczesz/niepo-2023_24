@@ -1,11 +1,14 @@
 function delay(){
     setTimeout(function(){
         $(".info").hide(
-            3000,
+            2000,
             function(){
-            alert("koniec animacji");
-            
+           $(".button")[0].disabled = false;            
         })
-    },3000)
+    },1000)
 }
+$('.button')[0].disabled = true;
 delay();
+$(".button").click(function(){
+    $(".info").show(1000);
+});
