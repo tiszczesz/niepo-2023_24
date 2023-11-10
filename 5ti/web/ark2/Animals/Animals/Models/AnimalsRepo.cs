@@ -31,6 +31,6 @@ namespace Animals.Models
 
             return animals;
         }
-        public List<Gromada> GetGromady(){}
+        
     }
 }
