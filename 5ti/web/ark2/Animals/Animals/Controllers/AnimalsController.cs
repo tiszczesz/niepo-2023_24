@@ -13,7 +13,8 @@ namespace Animals.Controllers
         }
         public IActionResult Index()
         {
-           
+           var animals = repo.GetAnimals();
+           ViewBag.animals = animals;
             return View();
         }
     }

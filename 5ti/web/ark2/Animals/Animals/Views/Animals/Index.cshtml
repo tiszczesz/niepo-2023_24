@@ -16,5 +16,13 @@
 <div>
     <img src="~/media/zwierzeta.jpg" alt="zwierzeta"/>
 </div>
+<div>
+    <h3>Lista zwierzat</h3>
+    <ol>
+        @foreach (var animal in ViewBag.animals as List<Animal>) {
+            <li>@animal.gatunek @animal.gromady_id</li>
+        }
+    </ol>
+</div>
 </body>
 </html>
