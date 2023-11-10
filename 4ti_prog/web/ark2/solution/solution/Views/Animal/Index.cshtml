@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Animal>
 @{
     Layout = null;
 }
@@ -41,6 +41,11 @@
 <div id="prawy">
     <h2>Wszystkie zwierzęta w bazie</h2>
     <h4>Lista zwierząt</h4>
+    <ol>
+        @foreach (Animal animal in Model) {
+            <li>@animal.Genre Gromada: @animal.AnimalClass_id</li>
+        }
+    </ol>
 </div>
 <div id="stopka">
     <a href="http://altas-zwierzat.pl" target="_blank">Poznaj inne strony o zwierzętach</a>
