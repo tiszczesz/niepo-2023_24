@@ -26,24 +26,3 @@ $("#fadeIn").click(
         });
     }
 )
-$("#fadeToggle").click(
-    function(){
-        $("#fadeToggleElem").fadeToggle(
-            "slow"
-        )
-    }
-);
-$("#fadeOut").click(
-    function(){
-        $("#fadeOutElem").fadeOut(
-            "slow"
-        )
-    }
-)
-$("#fadeTo").click(
-    function(){
-        $("#fadeToElem").fadeTo(
-            2000,0.5
-        )
-    }
-)
