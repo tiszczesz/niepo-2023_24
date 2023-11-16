@@ -16,7 +16,7 @@ $("#btn1").click(function(){
 $("#fadeIn").click(
     function(){  
         
-        $("#fadeInElem").fadeIn(1000,function(){
+        $("#fadeInElem").fadeIn(2000,function(){
             $("#fadeInElem").css(
                 {"display":"flex",
                 "justify-content":"center",
@@ -24,5 +24,11 @@ $("#fadeIn").click(
               }
             )
         });
+        
+    }
+)
+$("#fadeOut").click(
+    function(){
+        $("#fadeOutElem").fadeOut(2000);
     }
 )
