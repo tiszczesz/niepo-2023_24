@@ -7,6 +7,9 @@
 </head>
 <body>
     <?php
+    require_once "Student.php";
+    $s = new Student(34,"roman");
+    echo $s;
     class Example{
         //pola
         private string $info;

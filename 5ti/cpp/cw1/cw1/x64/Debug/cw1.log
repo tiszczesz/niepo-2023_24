@@ -1,0 +1,20 @@
+﻿  cw1.cpp
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\Finder.h(16,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\SortSet.h(20,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\SortSet.h(36,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\SortSet.h(47,13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\SortSet.h(61,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\cw1\SortSet.h(63,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'cw1.cpp')
+  
+  cw1.vcxproj -> E:\tools\GitHub\niepo 2023_24\5ti\cpp\cw1\x64\Debug\cw1.exe
