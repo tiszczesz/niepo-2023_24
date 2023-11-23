@@ -10,6 +10,11 @@
 
 int main()
 {
+    auto f1 = [](const int& a, const int& b) {
+        if (a == b) return 0;
+        return a > b? 1: -1;
+        };
+    cout << f1(12, 7) << endl;
     //Control* control = new Control(); //klasa abstrakcyjna przynajmniej 1 metoda
     // czysto wirualna
     ComboBox* cb = new ComboBox();
