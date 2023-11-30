@@ -4,7 +4,7 @@ namespace mvc_ef_mssql.Models
 {
     public class SchoolDbContext:DbContext
     {
-        public DbSet<MyStudent> Students { get; set; }
+        public DbSet<Student> Students { get; set; }
 
         public SchoolDbContext(DbContextOptions<SchoolDbContext> options)
         :base(options)
@@ -15,22 +15,22 @@ namespace mvc_ef_mssql.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<MyStudent>().HasData(
-                new MyStudent
+            modelBuilder.Entity<Student>().HasData(
+                new Student
                 {
                     Id = 1,
                     FirstName = "Adam",
                     LastName = "Nowak",
                     Age = 23
                 },
-                new MyStudent
+                new Student
                 {
                     Id = 2,
-                    FirstName = "monika",
+                    FirstName = "Monika",
                     LastName = "Kika",
                     Age = 22
                 },
-                new MyStudent
+                new Student
                 {
                     Id = 3,
                     FirstName = "Janusz",

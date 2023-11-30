@@ -2,7 +2,7 @@
 
 namespace mvc_ef_mssql.Models
 {
-    public class MyStudent
+    public class Student
     {
         [Key]
         public int Id { get; set; }

@@ -21,6 +21,12 @@ namespace mvc_ef_mssql.Controllers
             return View(students);
         }
 
+        public IActionResult Details(int id) {
+            var student = _context.Students.Find(id);
+            if (student == null) {
+                RedirectToAction("Index");}
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

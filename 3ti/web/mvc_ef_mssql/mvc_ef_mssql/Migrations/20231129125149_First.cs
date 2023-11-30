@@ -4,7 +4,7 @@
 
 namespace mvc_ef_mssql.Migrations
 {
-    public partial class first : Migration
+    public partial class First : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -31,7 +31,7 @@ namespace mvc_ef_mssql.Migrations
             migrationBuilder.InsertData(
                 table: "Students",
                 columns: new[] { "Id", "Age", "FirstName", "LastName" },
-                values: new object[] { 2, 22, "monika", "Kika" });
+                values: new object[] { 2, 22, "Monika", "Kika" });
 
             migrationBuilder.InsertData(
                 table: "Students",

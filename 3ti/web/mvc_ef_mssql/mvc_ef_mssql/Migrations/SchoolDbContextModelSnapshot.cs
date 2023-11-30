@@ -22,7 +22,7 @@ namespace mvc_ef_mssql.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("mvc_ef_mssql.Models.MyStudent", b =>
+            modelBuilder.Entity("mvc_ef_mssql.Models.Student", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -57,7 +57,7 @@ namespace mvc_ef_mssql.Migrations
                         {
                             Id = 2,
                             Age = 22,
-                            FirstName = "monika",
+                            FirstName = "Monika",
                             LastName = "Kika"
                         },
                         new

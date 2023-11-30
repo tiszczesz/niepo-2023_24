@@ -1,28 +1,33 @@
-﻿@model List<MyStudent>
+﻿@model List<Student>
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <h3>Lista studentów</h3>
-<table class="table table-striped">
-    <thead>
-    <tr>
-        <th>Lp</th>
-        <th>Imię</th>
-        <th>Nazwisko</th>
-        <th>Wiek</th>
-    </tr>
-    </thead>
-    <tbody>
-    @{ int lp = 0;}
-    @foreach (MyStudent s in Model) {
-        lp++;
+<div>
+    <table class="table table-striped">
         <tr>
-            <td>@lp</td>
-            <td>@s.FirstName</td>
-            <td>@s.LastName</td>
-            <td>@s.Age</td>
+            <th>Lp</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+            <td></td>
         </tr>
-    }
-    </tbody>
-</table>
+        @{
+            int lp = 0;
+        }
+        @foreach (var s in Model) {
+            lp++;
+            <tr>
+                <td>@lp</td>
+                <td>@s.FirstName</td>
+                <td>@s.LastName</td>
+                <td>@s.Age</td>
+                <td>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@s.Id">Szczegóły informacji</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
