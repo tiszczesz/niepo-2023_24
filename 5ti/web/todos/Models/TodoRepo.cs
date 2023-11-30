@@ -2,24 +2,31 @@
 
 namespace todos.Models
 {
-    public class TodoRepo {
+    public class TodoRepo
+    {
         private readonly string connString;
 
-        public TodoRepo(string connString) {
+        public TodoRepo(string connString)
+        {
             this.connString = connString;
         }
 
-        public List<Todo> GetAll() {
+        public List<Todo> GetAll()
+        {
             List<Todo> todos = new List<Todo>();
-            using (MySqlConnection conn = new MySqlConnection(connString)) {
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
                 MySqlCommand command = conn.CreateCommand();
                 command.CommandText = "SELECT * FROM todos";
                 conn.Open();
                 MySqlDataReader rd = command.ExecuteReader();
-                if (rd.HasRows) {
-                    while (rd.Read()) {
+                if (rd.HasRows)
+                {
+                    while (rd.Read())
+                    {
                         todos.Add(
-                            new Todo {
+                            new Todo
+                            {
                                 Id = rd.GetInt32(0),
                                 Content = rd.GetString(1),
                                 IsCompleted = rd.GetBoolean(2)
@@ -33,7 +40,8 @@ namespace todos.Models
             return todos;
         }
 
-        public Todo? GetByIdTodo(int? id) {
+        public Todo? GetByIdTodo(int? id)
+        {
             if (id == null) return null;
             Todo todo = null;
             using (MySqlConnection conn = new MySqlConnection(connString))
@@ -43,9 +51,11 @@ namespace todos.Models
                 command.CommandText = $"SELECT * FROM todos WHERE id={id}";
                 conn.Open();
                 MySqlDataReader rd = command.ExecuteReader();
-                if (rd.HasRows) {
+                if (rd.HasRows)
+                {
                     rd.Read();
-                    todo = new Todo {
+                    todo = new Todo
+                    {
                         Id = rd.GetInt32(0),
                         Content = rd.GetString(1),
                         IsCompleted = rd.GetBoolean(2)
@@ -55,18 +65,35 @@ namespace todos.Models
                 conn.Close();
             }
 
-            return todo;            
+            return todo;
         }
-        public void Insert(Todo todo) {
+        public void Insert(Todo todo)
+        {
             using (MySqlConnection conn = new MySqlConnection(connString))
             {
                 MySqlCommand command = conn.CreateCommand();
-                command.CommandText = $"INSERT INTO todos (content, iscompleted) VALUES ('{todo.Content}', {todo.IsCompleted})";
+                command.CommandText =
+                  $"INSERT INTO todos (content, isCompleted) VALUES ('{todo.Content}', {todo.IsCompleted})";
                 conn.Open();
                 command.ExecuteNonQuery();
                 conn.Close();
             }
 
 
+        }
+
+        internal void Delete(int? id)
+        { 
+            if(id==null) return;
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
+               
+                MySqlCommand command = conn.CreateCommand();
+                command.CommandText = $"DELETE FROM todos WHERE id={id}";
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
     }
 }

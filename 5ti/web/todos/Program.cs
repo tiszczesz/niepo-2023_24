@@ -15,5 +15,11 @@ app.MapGet("/todos/{id}", (int? id) => {
     if (todo == null) return Results.NotFound();
     return Results.Ok(todo);
 });
-
+app.MapPost("/todos", (Todo todo) => {
+    repo.Insert(todo);
+   // return Results.Created($"/todos/{todo.Id}", todo);
+});
+app.MapDelete("/todos/{id}", (int? id) => {
+    repo.Delete(id);
+});
 app.Run();
