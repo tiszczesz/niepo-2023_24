@@ -82,7 +82,7 @@ namespace todos.Models
 
         }
 
-        internal void Delete(int? id)
+        public void Delete(int? id)
         { 
             if(id==null) return;
             using (MySqlConnection conn = new MySqlConnection(connString))
@@ -94,6 +94,21 @@ namespace todos.Models
                 command.ExecuteNonQuery();
                 conn.Close();
             }
+        }
+
+        public void Update(int? id, Todo todo)
+        {
+            if(id==null) return;
+            using (MySqlConnection conn = new MySqlConnection(connString))
+            {
+                MySqlCommand command = conn.CreateCommand();
+                command.CommandText =
+                   $"UPDATE todos SET content='{todo.Content}', isCompleted={todo.IsCompleted} WHERE id={id}";
+                conn.Open();                
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+            
         }
     }
 }

@@ -24,11 +24,27 @@ namespace mvc_ef_mssql.Controllers
         public IActionResult Details(int id) {
             var student = _context.Students.Find(id);
             if (student == null) {
-                RedirectToAction("Index");}
-            return View();
+                return RedirectToAction("Index");
+            }
+            return View(student);
+        }
+
+        public IActionResult Delete(int id) {
+            var student = _context.Students.Find(id);
+            if (student != null) {
+                _context.Students.Remove(student);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
         }
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult InsertStudent() {
             return View();
         }
 

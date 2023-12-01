@@ -25,9 +25,11 @@
                 <td>@s.Age</td>
                 <td>
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@s.Id">Szczegóły informacji</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@s.Id">Usuń</a>
                 </td>
             </tr>
         }
     </table>
+    <a class="btn btn-info" asp-action="InsertStudent">Dodaj nowego studenta</a>
 </div>
 

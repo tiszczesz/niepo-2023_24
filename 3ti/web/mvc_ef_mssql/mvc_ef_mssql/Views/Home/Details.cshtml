@@ -1,0 +1,13 @@
+﻿@model Student
+@{
+}
+<h3>Szczegółowe informacje o studencie o id @Model.Id</h3>
+<div class="card" style="width: 30rem">
+    <h3 class="card-header">
+        <span class="card-title">@Model.FirstName @Model.LastName </span>
+    </h3>
+    <div class="card-body">
+        Szczegóły z życia studenta
+        <span class="card-text">Wiek: @Model.Age</span>
+    </div>
+</div>
