@@ -4,7 +4,7 @@ public class FakeStudentRepo : IStudentRepo
 {
     private readonly List<Student> _students;
 
-    public FakeStudentRepo()
+    public FakeStudentRepo(string fake)
     {
         _students = new List<Student>{
             new Student{Id=1,Firstname="Adam",Lastname="Nowak"},
@@ -25,5 +25,9 @@ public class FakeStudentRepo : IStudentRepo
     {
         return _students.FirstOrDefault(s => s.Id == id);
     }
-    
+
+    public void Insert(Student student)
+    {
+        throw new NotImplementedException();
+    }
 }

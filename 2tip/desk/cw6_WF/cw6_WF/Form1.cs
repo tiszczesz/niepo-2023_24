@@ -7,6 +7,16 @@ namespace cw6_WF
             InitializeComponent();
         }
 
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Form2().ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.Text = DateTime.Now.ToShortDateString();
+        }
+
+       
     }
 }
