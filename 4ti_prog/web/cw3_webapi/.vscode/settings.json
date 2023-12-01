@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "cw3_empty_api.sln"
+    "dotnet.defaultSolution": "cw3_empty_api.sln",
+    "editor.inlineSuggest.showToolbar": "always"
 }
