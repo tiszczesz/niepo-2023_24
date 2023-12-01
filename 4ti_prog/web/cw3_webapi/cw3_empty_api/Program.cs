@@ -12,4 +12,5 @@ var app = builder.Build();
 app.UseStaticFiles();
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/students",()=>repo.GetAll());
+app.MapGet("/students/{id}",(int? id)=>repo.GetById(id));
 app.Run();
