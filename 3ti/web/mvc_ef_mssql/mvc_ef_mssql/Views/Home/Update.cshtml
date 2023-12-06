@@ -1,10 +1,10 @@
 ﻿@model Student
 
-<h3>dodawanie nowego studenta</h3>
-<form asp-action="InsertStudent" method="post">
+<h3>Aktualizacja danych studenta</h3>
+<form asp-action="Update" method="post">
     <div class="row m-2">
         <label asp-for="FirstName" class="col-3 text-end"></label>
-        <input asp-for="FirstName" class="col-6"/>
+        <input asp-for="FirstName" class="col-6" />
         <span class="col-3 error" asp-validation-for="FirstName"></span>
     </div>
     <div class="row m-2">
@@ -17,5 +17,5 @@
         <input asp-for="Age" class="col-6" />
         <span class="col-3 error" asp-validation-for="Age"></span>
     </div>
-    <input type="submit" class="btn btn-primary col-6 offset-3" value="Zapisz"/>
+    <input type="submit" class="btn btn-primary col-6 offset-3" value="Aktualizuj" />
 </form>

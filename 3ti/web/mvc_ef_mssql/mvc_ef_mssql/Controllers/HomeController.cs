@@ -48,6 +48,40 @@ namespace mvc_ef_mssql.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult InsertStudent(Student student)
+        {
+            if (ModelState.IsValid) {
+                _context.Students.Add(student);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(student);
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id) {
+            Student? student = _context.Students.Find(id);
+            if (student == null) {
+                return RedirectToAction("Index");
+            }
+
+            return View(student);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Student student)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                _context.Students.Update(student);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(student);
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
