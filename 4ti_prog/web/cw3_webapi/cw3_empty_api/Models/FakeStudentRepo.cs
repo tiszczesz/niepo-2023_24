@@ -16,6 +16,12 @@ public class FakeStudentRepo : IStudentRepo
             MyDate=new DateTime(2012,3,21)},
         };
     }
+
+    public int Delete(int? id)
+    {
+        throw new NotImplementedException();
+    }
+
     public List<Student> GetAll()
     {
         return _students;
@@ -27,6 +33,11 @@ public class FakeStudentRepo : IStudentRepo
     }
 
     public void Insert(Student student)
+    {
+        throw new NotImplementedException();
+    }
+
+    public int Update(int? id, Student student)
     {
         throw new NotImplementedException();
     }

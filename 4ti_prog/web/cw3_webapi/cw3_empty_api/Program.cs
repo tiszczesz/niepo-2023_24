@@ -30,5 +30,17 @@ app.MapPost("/students", (Student student) =>
 {
   repo.Insert(student);
 });
+app.MapDelete("/students/{id}", (int? id) =>
+{
+  int result = repo.Delete(id);
+  if(result==0) return Results.NotFound();
+  else return Results.Ok();
+});
+app.MapPut("/students/{id}", (int? id, Student student) =>{
+  int result = repo.Update(id,student);
+  if(result==0) return Results.NotFound();
+  else return Results.Ok();
+});
+
 
 app.Run();

@@ -10,6 +10,22 @@ public class MysqlStudentRepo : IStudentRepo
     {
         _connString = connString;
     }
+
+    public int Delete(int? id)
+    {
+        int returnedRows = 0;   
+       using (MySqlConnection conn = new MySqlConnection(_connString))
+        {
+            MySqlCommand command = conn.CreateCommand();
+            command.CommandText = $"DELETE FROM students WHERE id={id}";
+            conn.Open();
+            returnedRows = command.ExecuteNonQuery();
+            conn.Close();
+            
+        }
+        return returnedRows;
+    }
+
     public List<Student> GetAll()
     {
         List<Student> students = new List<Student>();
@@ -77,6 +93,22 @@ public class MysqlStudentRepo : IStudentRepo
         }
     }
 
-    
-    
+    public int Update(int? id, Student student)
+    {
+        int result = 0;
+        using(MySqlConnection conn = new MySqlConnection(_connString)){
+            MySqlCommand command = conn.CreateCommand();
+            var myData = student.MyDate.ToString("yyyy-MM-dd");
+            command.CommandText = 
+            $"UPDATE students SET firstname=@firstname, lastname=@lastname, mydate=@myDate WHERE id={id}";
+            Console.WriteLine(command.CommandText);
+            conn.Open();
+            command.Parameters.AddWithValue("@firstname", student.Firstname);
+            command.Parameters.AddWithValue("@lastname", student.Lastname);
+            command.Parameters.AddWithValue("@myDate", myData);
+            result = command.ExecuteNonQuery();
+            conn.Close();
+        }
+        return result;
+    }
 }
