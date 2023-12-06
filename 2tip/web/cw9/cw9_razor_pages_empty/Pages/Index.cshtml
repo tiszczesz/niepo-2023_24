@@ -1,0 +1,32 @@
+﻿@page
+@model MyApp.Namespace.IndexModel
+@{
+}
+<h1>
+    To jest strona Index
+
+</h1>
+<ol>
+    <li>to jest lista numerowana</li>
+    <li>to jest lista numerowana</li>
+    <li>to jest lista numerowana</li>
+</ol>
+<div>
+    @DateTime.Now.ToShortDateString()
+</div>
+<div>
+    <ol>
+    @for(int i = 0; i < 10; i++){
+        <li>Eeeeeee</li>
+    }
+    </ol>
+</div>
+<div>
+    @for(int i = 1; i <= 6; i++){
+        @Html.Raw("<h"+i+">");
+        @Html.Raw("elemnt : "+i);
+        @Html.Raw("</h"+i+">");
+    }
+</div>
+
+    

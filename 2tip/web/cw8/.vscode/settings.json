@@ -1,3 +1,4 @@
 {
-    "dotnet.defaultSolution": "cw8_empty.sln"
+    "dotnet.defaultSolution": "cw8_empty.sln",
+    "editor.inlineSuggest.showToolbar": "onHover"
 }
