@@ -8,7 +8,8 @@
 <body>
     <?php
     require_once "Student.php";
-    $s = new Student(34,"roman");
+    $s = new Student(34,"Roman");
+    var_dump($s);
     echo $s;
     class Example{
         //pola
