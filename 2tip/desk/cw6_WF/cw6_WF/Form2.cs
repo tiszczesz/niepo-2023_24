@@ -16,5 +16,16 @@ namespace cw6_WF
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, EventArgs e) {
+            string firstname = tbFirstname.Text.Trim();
+            string lastname = tbLastname.Text.Trim();
+            string age = tbAge.Text.Trim();
+            if (firstname.Length == 0 || lastname.Length == 0 || age.Length == 0) {
+                MessageBox.Show("Błędne dane");
+                return;
+            }
+            lbResult.Text = $"Imię: {firstname} Nazwisko: {lastname} wiek: {age} ";
+        }
     }
 }

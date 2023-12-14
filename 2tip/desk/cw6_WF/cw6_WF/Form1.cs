@@ -17,6 +17,9 @@ namespace cw6_WF
             button2.Text = DateTime.Now.ToShortDateString();
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
