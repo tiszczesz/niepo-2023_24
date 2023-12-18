@@ -1,0 +1,15 @@
+﻿@page
+@model MyApp.Namespace.Page3Model
+@{
+}
+<h3>Strona świąteczna</h3>
+<h4>Lista prezentów</h4>
+<div class="d-flex p-2">
+    <ul>
+        @foreach (var elem in Model.Gifts)
+        {
+            <li>@elem</li>
+        }
+    </ul>
+    <img src="~/media/choinka1.jpg" alt="choinka" >
+</div>
