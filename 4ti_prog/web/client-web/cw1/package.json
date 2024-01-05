@@ -1,0 +1,14 @@
+{
+  "name": "cw1",
+  "version": "1.0.0",
+  "description": "cwiczenie wstepne",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "noname",
+  "license": "ISC"
+}
