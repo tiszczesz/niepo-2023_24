@@ -11,26 +11,29 @@
 <body>
     <div class="container">
         <h1>strona layout</h1>
-        <div class="menu">
-            <div class="menu-iem">
-                <a asp-page="Index">Strona główna</a>
-            </div>
-            <div class="menu-iem">
-                <a asp-page="Index2">Index2</a>
-            </div>
-            <div class="menu-iem">
-                <a asp-page="Page3">Strona świąteczna</a>
-            </div>
-            <div class="menu-iem">
+        <div class="d-flex">
+            <div class="menu" style="width:200px;">
+                <div class="menu-iem">
+                    <a asp-page="Index">Strona główna</a>
+                </div>
+                <div class="menu-iem">
+                    <a asp-page="Index2">Index2</a>
+                </div>
+                <div class="menu-iem">
+                    <a asp-page="Page3">Strona świąteczna</a>
+                </div>
+                <div class="menu-iem">
 
+                </div>
+            </div>
+            <div class="content">
+                @RenderBody()
             </div>
         </div>
-        <div class="content">
-            @RenderBody()
-        </div>
+
     </div>
 
-<script src="~/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="~/libs/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
