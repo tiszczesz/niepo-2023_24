@@ -4,4 +4,4 @@ function NWDRec(a, b) {
         return a;
     return NWDRec(b, a % b);
 }
-console.log(NWDRec(40, 60));
+console.log(NWDRec(25, 60));
