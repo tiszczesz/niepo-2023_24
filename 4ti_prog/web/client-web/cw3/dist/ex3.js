@@ -14,11 +14,10 @@ r1.question('Podaj a: ', (a) => {
     r1.question('Podaj b: ', (b) => {
         const sum = parseInt(a) + parseInt(b);
         console.log(`${a} + ${b} = ${sum}`);
+        console.log("po r1");
         r1.close();
-        console.log("koniec r1");
     });
 });
-console.log("koniec ...");
 // r1.on('line',(a)=>{
 //     console.log("Napisano: "+a);
 // })
