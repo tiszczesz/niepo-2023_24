@@ -3,6 +3,7 @@
 npm init -y
 
 npm i typescript
+npm i @types/node --save-dev //typy dla typescript w node.js
 
 npx tsc -init
 
