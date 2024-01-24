@@ -1,4 +1,5 @@
 import * as fs  from 'fs';
+import { colors } from './data.js';
 
 fs.readFile('./info.txt', 'utf8', (error, data) => {
     if (error) {
@@ -8,3 +9,4 @@ fs.readFile('./info.txt', 'utf8', (error, data) => {
   
     console.log(data);
   });
+  fs
