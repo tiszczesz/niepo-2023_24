@@ -23,8 +23,20 @@
                 <label for="lastname" class="col-3">Podaj nazwisko</label>
                 <input class="col-6" type="text" name="lastname" id="lastname" required />
             </div>
-           
-           
+            <div class="row m-2">
+                <label for="gender" class="col-3">Wybierz płeć</label><br />
+
+            </div>
+            <div class="row m-2">
+                <input class="offset-3 col-1" type="radio" name="gender"value="k" />
+                <label for="gender" class="col-3">Kobieta</label>
+                
+            </div>
+            <div class="row m-2"> 
+                <input class="offset-3 col-1" type="radio" name="gender"  value="m" />
+                <label for="gender" class="col-3">Mężczyzna</label>
+               
+            </div>
             <div class="row m-2">
                 <input type="submit" value="Zapisz" name="save" class="btn btn-primary offset-3 col-6">
             </div>
@@ -33,20 +45,19 @@
         if (isset($_POST['save'])) {
             $firstname = $_POST['firstname'];
             $lastname = $_POST['lastname'];
-            $salary = $_POST['salary'];
-            $manager = $_POST['manager'];
+
 
         ?>
             <div class="card">
                 <h4 class="card-header">
-                <?php echo $firstname.' '. $lastname;?>
+                    <?php echo $firstname . ' ' . $lastname; ?>
                 </h4>
                 <div class="card-body">
                     <h5 class="card-title">
-                    <?php echo $manager;?>
+                        <?php echo $manager; ?>
                     </h5>
                     <div class="card-text">
-                    <?php echo "Witamy w firmie dzisiaj mamy ".date("d-m-Y")." Twoja pensja: {$salary}"?>
+                        <?php echo "Witamy w firmie dzisiaj mamy " . date("d-m-Y") . " Twoja pensja: {$salary}" ?>
                     </div>
                 </div>
             </div>
