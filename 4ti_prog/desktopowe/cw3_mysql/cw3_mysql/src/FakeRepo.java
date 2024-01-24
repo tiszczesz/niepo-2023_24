@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyRepo implements IRepository {
+public class FakeRepo implements IRepository {
     @Override
     public List<Person> getPersons() {
         ArrayList<Person> people = new ArrayList<Person>();
