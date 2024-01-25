@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnDelete = new Button();
             btnInsertColor = new Button();
             btnClearList = new Button();
             btnAddColor = new Button();
@@ -36,7 +37,6 @@
             label2 = new Label();
             listColors = new ListBox();
             label1 = new Label();
-            btnDelete = new Button();
             colorPanel = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -57,6 +57,15 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(581, 450);
             panel1.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(397, 166);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(149, 23);
+            btnDelete.TabIndex = 7;
+            btnDelete.Text = "Usuń kolor";
+            btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnInsertColor
             // 
@@ -127,16 +136,6 @@
             label1.Size = new Size(166, 32);
             label1.TabIndex = 0;
             label1.Text = "Zbiór kolorów";
-            // 
-            // btnDelete
-            // 
-            btnDelete.Enabled = false;
-            btnDelete.Location = new Point(397, 166);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(149, 23);
-            btnDelete.TabIndex = 7;
-            btnDelete.Text = "Usuń kolor";
-            btnDelete.UseVisualStyleBackColor = true;
             // 
             // colorPanel
             // 
