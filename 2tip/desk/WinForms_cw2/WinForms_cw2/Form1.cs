@@ -13,7 +13,7 @@ namespace WinForms_cw2
             if (currentColor != null)
             {
                 listColors.Items.Add(currentColor);
-               
+                btnInsertColor.Enabled = IsCorrectCount();
                 // MessageBox.Show(listColors.DataSource)
             }
             else
@@ -25,8 +25,23 @@ namespace WinForms_cw2
         private void btnClearList_Click(object sender, EventArgs e)
         {
             listColors.Items.Clear();
+            btnInsertColor.Enabled = false;
         }
 
-     
+        private bool IsCorrectCount()
+        {
+            //if(listColors.Items==null) return false;
+            return listColors.Items.Count > 1;
+        }
+
+        private void btnInsertColor_Click(object sender, EventArgs e)
+        {
+            if (listColors.SelectedItem != null) {
+                MessageBox.Show("Mo¿na pracowaæ");
+            }else
+            {
+                MessageBox.Show("Musisz wybraæ element");
+            }
+        }
     }
 }

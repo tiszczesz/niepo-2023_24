@@ -1,4 +1,5 @@
 export const colors = ["red", "green", "blue", "yellow"];
+export const lines = ["Ala ma kota", "żółta łódź", "ławka mała"];
 export const firstname = "aasasasa";
 export function getPrimes(size) {
     const primes = [];

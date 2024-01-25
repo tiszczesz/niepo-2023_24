@@ -36,12 +36,15 @@
             label2 = new Label();
             listColors = new ListBox();
             label1 = new Label();
+            btnDelete = new Button();
+            colorPanel = new Panel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.InactiveCaption;
+            panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnInsertColor);
             panel1.Controls.Add(btnClearList);
             panel1.Controls.Add(btnAddColor);
@@ -58,16 +61,17 @@
             // btnInsertColor
             // 
             btnInsertColor.Enabled = false;
-            btnInsertColor.Location = new Point(397, 91);
+            btnInsertColor.Location = new Point(397, 92);
             btnInsertColor.Name = "btnInsertColor";
             btnInsertColor.Size = new Size(149, 23);
             btnInsertColor.TabIndex = 6;
             btnInsertColor.Text = "Wstaw kolor";
             btnInsertColor.UseVisualStyleBackColor = true;
+            btnInsertColor.Click += btnInsertColor_Click;
             // 
             // btnClearList
             // 
-            btnClearList.Location = new Point(397, 127);
+            btnClearList.Location = new Point(397, 129);
             btnClearList.Name = "btnClearList";
             btnClearList.Size = new Size(149, 23);
             btnClearList.TabIndex = 5;
@@ -113,7 +117,6 @@
             listColors.Name = "listColors";
             listColors.Size = new Size(161, 379);
             listColors.TabIndex = 1;
-            
             // 
             // label1
             // 
@@ -125,11 +128,31 @@
             label1.TabIndex = 0;
             label1.Text = "Zbiór kolorów";
             // 
+            // btnDelete
+            // 
+            btnDelete.Enabled = false;
+            btnDelete.Location = new Point(397, 166);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(149, 23);
+            btnDelete.TabIndex = 7;
+            btnDelete.Text = "Usuń kolor";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // colorPanel
+            // 
+            colorPanel.BackColor = Color.White;
+            colorPanel.Dock = DockStyle.Fill;
+            colorPanel.Location = new Point(581, 0);
+            colorPanel.Name = "colorPanel";
+            colorPanel.Size = new Size(219, 450);
+            colorPanel.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(colorPanel);
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Okno główne";
@@ -148,5 +171,7 @@
         private Button btnAddColor;
         private Button btnClearList;
         private Button btnInsertColor;
+        private Button btnDelete;
+        private Panel colorPanel;
     }
 }

@@ -11,7 +11,7 @@ using WebAppMysqlEF.Models;
 namespace WebAppMysqlEF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240119100345_First")]
+    [Migration("20240124124638_First")]
     partial class First
     {
         /// <inheritdoc />
