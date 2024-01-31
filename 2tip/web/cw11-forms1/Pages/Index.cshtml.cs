@@ -13,8 +13,11 @@ namespace MyApp.Namespace
         public void OnGet()
         {           
             ViewData["info"] = "ala ma kota";
-            var result = Request.Query;
-            ViewData["result"] = result;
+            //var result = Request.Query;
+            if(Request.Query.Keys.Count>0){
+                 ViewData["result"] = $"Imię: {Request.Query["firstname"]} nazwisko: {Request.Query["lastname"]}";
+            }
+           
         }
     }
 }
