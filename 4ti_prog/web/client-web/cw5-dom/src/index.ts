@@ -6,6 +6,13 @@ console.log(Products);
 function RefreshList(root:HTMLDivElement|null){
     root!.innerHTML = "";
     root?.appendChild(GenerList(Products));
+    const imgs = document.querySelectorAll<HTMLButtonElement>("img.delete");
+    imgs.forEach((e,i)=>{
+        e.addEventListener("click",(event:Event)=>{
+            console.log((event.target ));
+            
+        });
+    });
 }
 RefreshList(root);
 document.
@@ -21,3 +28,6 @@ document.
         }
        
     });
+
+
+

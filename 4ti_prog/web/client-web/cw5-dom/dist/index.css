@@ -1,4 +1,4 @@
-img{
-    float: right;
-    width: 30px;
+.delete{
+    border: solid 1px grey;
+    cursor: pointer;
 }
