@@ -1,0 +1,30 @@
+﻿@page
+@model MyApp.Namespace.Form1Model
+@{
+}
+<h2>Nowa Gra</h2>
+<form method="post">
+    <div class="row m-2">
+        <label asp-for="@Model.MyGame.Title" class="col-3"></label>
+        <input asp-for="@Model.MyGame.Title" class="col-6"/>
+        <span asp-validation-for="@Model.MyGame.Title" class="col-3 error"></span>
+    </div>
+     <div class="row m-2">
+        <label asp-for="@Model.MyGame.Genre" class="col-3"></label>
+        <input asp-for="@Model.MyGame.Genre" class="col-6"/>
+        <span asp-validation-for="@Model.MyGame.Genre" class="col-3 error"></span>
+    </div>
+     <div class="row m-2">
+        <label asp-for="@Model.MyGame.Price" class="col-3"></label>
+        <input asp-for="@Model.MyGame.Price" class="col-6" type="number" step="0.01"/>
+        <span asp-validation-for="@Model.MyGame.Price" class="col-3 error"></span>
+    </div>
+       <div class="row m-2">
+        <label asp-for="@Model.MyGame.DateOf" class="col-3"></label>
+        <input asp-for="@Model.MyGame.DateOf" class="col-6"/>
+        <span asp-validation-for="@Model.MyGame.DateOf" class="col-3 error"></span>
+    </div>
+    <div class="row m-2">
+        <input type="submit" value="Zapisz" class="col-6 offset-3 btn btn-primary"/>
+    </div>
+</form>
