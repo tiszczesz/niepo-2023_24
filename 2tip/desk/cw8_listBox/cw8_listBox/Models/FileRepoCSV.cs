@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace cw8_listBox.Models
 {
-    internal class FileRepoCSV
+    public class FileRepoCSV :IRepository
     {
+        public List<Product>? Products { get; set; }
+
+        public FileRepoCSV(string filename="products.csv") {
+            Products = FileFromFile(filename);
+        }
+
+        private List<Product>? FileFromFile(string filename) {
+            //todo
+        }
+
+        public List<Product> GetProducts() {
+            return Products?? new List<Product>();
+        }
     }
 }
