@@ -16,6 +16,7 @@ namespace cw8_listBox.Models
 
         private List<Product>? FileFromFile(string filename) {
             //todo
+            return null;
         }
 
         public List<Product> GetProducts() {
