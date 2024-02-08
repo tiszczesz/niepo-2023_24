@@ -16,6 +16,10 @@ namespace cw8_listBox.Models
 
         private List<Product>? FileFromFile(string filename) {
             //todo
+            List<string> lines = new List<string>();
+            if (File.Exists(filename)) {
+                lines = File.ReadAllLines(filename).ToList();
+            }
             return null;
         }
 
