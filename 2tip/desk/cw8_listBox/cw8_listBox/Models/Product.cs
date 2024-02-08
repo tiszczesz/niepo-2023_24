@@ -13,5 +13,8 @@ namespace cw8_listBox.Models
         public string? Description { get; set; }
         public string? Category { get; set; }
         public decimal Price { get; set; }
+        public override string ToString() {
+            return $"Nazwa: {Name} opis: {Description} kategoria: {Category} cena: {Price} zł";
+        }
     }
 }

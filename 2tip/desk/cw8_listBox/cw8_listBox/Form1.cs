@@ -11,7 +11,21 @@ namespace cw8_listBox
             _repository = new FakeRepo();
         }
 
-        private void btnLoad_Click(object sender, EventArgs e) {
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            lbProducts.DataSource = _repository.GetProducts();
+        }
+
+        private void lbProducts_DataSourceChanged(object sender, EventArgs e)
+        {
+            lbCoumt.Text = _repository.GetProducts().Count.ToString();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            _repository.GetProducts()
+                .Add(new Product{Id = 6,Name = "ssss"});
+            lbProducts.DataSource = null;
             lbProducts.DataSource = _repository.GetProducts();
         }
     }

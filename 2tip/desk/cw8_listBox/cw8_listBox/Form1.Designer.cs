@@ -30,6 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            btnAdd = new Button();
+            lbCoumt = new Label();
+            label1 = new Label();
             btnLoad = new Button();
             lbProducts = new ListBox();
             fakeRepoBindingSource = new BindingSource(components);
@@ -40,12 +43,44 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(255, 224, 192);
+            panel1.Controls.Add(btnAdd);
+            panel1.Controls.Add(lbCoumt);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(btnLoad);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 450);
             panel1.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(12, 87);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(172, 50);
+            btnAdd.TabIndex = 3;
+            btnAdd.Text = "Nowy produkt";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // lbCoumt
+            // 
+            lbCoumt.AutoSize = true;
+            lbCoumt.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            lbCoumt.ForeColor = Color.DarkRed;
+            lbCoumt.Location = new Point(125, 406);
+            lbCoumt.Name = "lbCoumt";
+            lbCoumt.Size = new Size(0, 25);
+            lbCoumt.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 414);
+            label1.Name = "label1";
+            label1.Size = new Size(95, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Ilość produktów:";
             // 
             // btnLoad
             // 
@@ -63,10 +98,10 @@
             lbProducts.FormattingEnabled = true;
             lbProducts.ItemHeight = 15;
             lbProducts.Location = new Point(200, 0);
-            lbProducts.MultiColumn = true;
             lbProducts.Name = "lbProducts";
             lbProducts.Size = new Size(600, 450);
             lbProducts.TabIndex = 1;
+            lbProducts.DataSourceChanged += lbProducts_DataSourceChanged;
             // 
             // fakeRepoBindingSource
             // 
@@ -82,6 +117,7 @@
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)fakeRepoBindingSource).EndInit();
             ResumeLayout(false);
         }
@@ -92,5 +128,8 @@
         private Button btnLoad;
         private ListBox lbProducts;
         private BindingSource fakeRepoBindingSource;
+        private Label lbCoumt;
+        private Label label1;
+        private Button btnAdd;
     }
 }
