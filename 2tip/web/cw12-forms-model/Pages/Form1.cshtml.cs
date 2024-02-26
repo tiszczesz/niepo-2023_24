@@ -11,12 +11,7 @@ namespace MyApp.Namespace
         {
         }
         public void OnPost(){
-            if(ModelState.IsValid){
-                ViewData["result"]=true;
-            }else{
-                ViewData["result"]=false;
-            }
-
+            
         }
     }
 }
