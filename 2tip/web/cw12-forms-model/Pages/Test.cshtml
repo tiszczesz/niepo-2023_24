@@ -1,0 +1,19 @@
+﻿@page
+@model MyApp.Namespace.TestModel
+@{
+}
+<form method="post">
+    <input type="text" name="dane" placeholder="wypełnij pole">
+    <input type="submit" value="Zapisz" asp-page-handler="Save">
+</form>
+
+<form method="post">
+    <input type="checkbox" asp-for="MyCheckbox" />
+    <label for="myCheckbox">Moja etykieta</label>
+    <button type="submit" asp-page-handler="Check">Sprawdź</button> 
+</form>
+@if(ViewData["result"]!=null){
+    <div style="bacground-color='green'">
+        Efekt formularza: @ViewData["result"]
+    </div>
+}
