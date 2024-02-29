@@ -24,7 +24,10 @@ namespace cw8_listBox
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Products.Add(new Product{Id = 6,Name = "ssss",Price = 23.89m});
+            //otwarcie okienka z formularzem nowego produktu
+            //zapisanie danych z formularza do Products
+            //Products.Add(new Product{Id = 6,Name = "ssss",Price = 23.89m});
+            new AddProductForm(this).ShowDialog();
             lbProducts.DataSource = null;
             lbProducts.DataSource = Products;
         }
