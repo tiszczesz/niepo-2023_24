@@ -2,6 +2,7 @@ import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Todo, Todos } from './Todos';
+import GetPost from './fromApi';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="container">
@@ -30,3 +31,6 @@ function generList(data:Todo[]):HTMLDivElement{
   result.appendChild(ul);
   return result;
 }
+const posts = await GetPost();
+console.log(posts);
+
