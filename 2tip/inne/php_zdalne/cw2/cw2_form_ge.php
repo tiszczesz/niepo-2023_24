@@ -10,7 +10,7 @@
 <body>
     <form action="result.php" method="get">
         <input type="text" name="firstname" id="firstname">
-        <input name="submit" type="button" value="Wyślij">
+        <input name="submit" type="submit" value="Wyślij">
     </form>
 </body>
 
