@@ -6,7 +6,12 @@ function generHobbies() : array {
     ];    
 }
 function hobbiesToCheckBox(array $hobbies):string {
-    return implode(array_map(function($hobby){
-        return "<label><input type='checkbox' name='hobbies[]' value='$hobby'>$hobby</label>";
-    },$hobbies));
+    // return implode(array_map(function($hobby){
+    //     return "<label class='offset-3'><input type='checkbox' name='hobbies[]' value='$hobby'>$hobby</label>";
+    // },$hobbies));
+    $html = '';
+    foreach($hobbies as $h){
+        $html .= "<label class='offset-3'><input type='checkbox' name='hobbies[]' value='$h'>$h</label>";
+    }
+    return $html;
 }
