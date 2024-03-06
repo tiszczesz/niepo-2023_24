@@ -19,3 +19,5 @@ E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windo
 E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.pdb
 E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windows\WpfApp1.genruntimeconfig.cache
 E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windows\ref\WpfApp1.dll
+E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windows\SecondWindow.g.cs
+E:\tools\GitHub\niepo 2023_24\4ti_prog\desktopowe\WpfApp1\obj\Debug\net8.0-windows\SecondWindow.baml

@@ -29,5 +29,9 @@ namespace WpfApp1
             var date = calendar.SelectedDate.Value;
             label2.Content = DateTime.Now.Year - date.Year;
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e) {
+            new SecondWindow().ShowDialog();
+        }
     }
 }
