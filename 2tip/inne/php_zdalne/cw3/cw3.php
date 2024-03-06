@@ -17,8 +17,9 @@
     for ($i = 0; $i < strlen($text1); $i++) {
         echo $text1[$i] . ' ';
     }
-    function my_split(string $text,string $char): string {
-        //musi być return
+    function my_split(string $text, string $char): string
+    {
+        return implode($char, mb_str_split($text));
     }
 
     echo "<hr>";
@@ -28,7 +29,7 @@
     }
     var_dump(str_split($text1));
     var_dump(mb_str_split($text2));
-    echo "<p>".my_split($text2,'-')."</p>"; // --> ż-ó-ł-t-a
+    echo "<p>" . my_split($text2, '-') . "</p>"; // --> ż-ó-ł-t-a
     ?>
     </pre>
 </body>
