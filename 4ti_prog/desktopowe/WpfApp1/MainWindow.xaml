@@ -31,6 +31,7 @@
             Grid.Row="1" Grid.Column="0"
             x:Name="calendar" SelectedDatesChanged="calendar_SelectedDatesChanged"/>
         <Label x:Name="label2" Grid.Row="1" Grid.Column="1" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0"  VerticalAlignment="Top" Width="256" Height="64"/>
+        <Button x:Name="button1" Grid.Column="2" Content="Nowe okno" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="125" Height="52" Click="button1_Click"/>
 
     </Grid>
 </Window>

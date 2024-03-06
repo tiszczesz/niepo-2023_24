@@ -26,15 +26,22 @@
             <div class="row m-2">
                 <label for="gender" class="col-3">Wybierz płeć</label><br />
 
+            
+                <input class="col-1" type="radio" name="gender" value="k" checked/>
+                <label for="gender" class="col-2">Kobieta</label>
+
+           
+                <input class="col-1" type="radio" name="gender" value="m" />
+                <label for="gender" class="col-2">Mężczyzna</label>
+
             </div>
             <div class="row m-2">
-                <input class="offset-3 col-1" type="radio" name="gender"value="k" />
-                <label for="gender" class="col-3">Kobieta</label>
+                <label for="">Wybierz zainteresowania:</label><br />
                 
-            </div>
-            <div class="row m-2"> 
-                <input class="offset-3 col-1" type="radio" name="gender"  value="m" />
-                <label for="gender" class="col-3">Mężczyzna</label>
+                <?php
+                $hobbies = generHobbies();
+                echo hobbiesToCheckBox($hobbies);
+                ?>
                
             </div>
             <div class="row m-2">
@@ -45,7 +52,8 @@
         if (isset($_POST['save'])) {
             $firstname = $_POST['firstname'];
             $lastname = $_POST['lastname'];
-
+           // print_r($_POST['hobbies']);
+            //var_dump($_POST);
 
         ?>
             <div class="card">
@@ -54,10 +62,20 @@
                 </h4>
                 <div class="card-body">
                     <h5 class="card-title">
-                        <?php echo $manager; ?>
+                        <?php echo ($_POST['gender']==='m')? " mężczyzna" : " kobieta" ?>
                     </h5>
                     <div class="card-text">
-                        <?php echo "Witamy w firmie dzisiaj mamy " . date("d-m-Y") . " Twoja pensja: {$salary}" ?>
+                        <?php
+                        if(isset($_POST['hobbies'])){
+                            echo "<ul class='list-group'>";
+                            foreach($_POST['hobbies'] as $h){
+                                echo "<li class='list-group-item'>$h</li>";
+                            }
+                            echo "</ul>";
+                        }else{
+                            echo "Brak zainteresowań!!! a szkoda";
+                        }
+                          ?>
                     </div>
                 </div>
             </div>
