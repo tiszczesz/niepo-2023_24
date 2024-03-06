@@ -1,14 +1,31 @@
-﻿namespace WebEmptyFile.Models
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace WebEmptyFile.Models
 {
     public class Person
     {
         public Person() {
-            Id = new Guid().ToString();
+            Id = Guid.NewGuid().ToString();
         }
+        
+        
         public string Id { get; set; }
-        public string Firstname { get; set; }
-        public string Lastname { get; set; }
-        public string Content { get; set; }
-        public DateOnly PartyDate { get; set; }
+
+        [DisplayName("Podaj imię")]
+        [Required(ErrorMessage = "Podaj imię")]
+        public string? Firstname { get; set; }
+
+        [DisplayName("Podaj nazwisko")]
+        [Required(ErrorMessage = "Podaj nazwisko")]
+        public string? Lastname { get; set; }
+
+        [DisplayName("Podaj co przyniesiesz")]
+        [Required(ErrorMessage = "Podaj co przyniesiesz")]
+        public string? Content { get; set; }
+
+        [DisplayName("Wybierz datę")]
+        [Required(ErrorMessage = "Wybierz datę")]
+        public DateOnly? PartyDate { get; set; }
     }
 }
