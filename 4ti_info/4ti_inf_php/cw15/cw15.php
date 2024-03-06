@@ -14,7 +14,7 @@
         }
         fclose($f);
     }
-    $dane = ["ala ma kota","inny tekst","jeszczejedna linijka tekstu"];
+    $dane = ["ala ma kota","inny tekst","jeszczejedna linijka tekstu","fghfhfg hfg hfghfhfhf","to działa"];
     //fopen   'w'
     $f = fopen("wynik.txt",'w');
 
