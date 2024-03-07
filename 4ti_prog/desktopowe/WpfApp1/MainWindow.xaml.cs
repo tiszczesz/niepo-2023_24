@@ -33,5 +33,9 @@ namespace WpfApp1
         private void button1_Click(object sender, RoutedEventArgs e) {
             new SecondWindow().ShowDialog();
         }
+
+        private void Button2_OnClick(object sender, RoutedEventArgs e) {
+            new NWDWindow().ShowDialog();
+        }
     }
 }
