@@ -1,0 +1,24 @@
+﻿@page
+@model MyApp.Namespace.Index2Model
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="~/style.css">
+    </head>
+    <body>
+      <h1>Strona Index2</h1>
+      <div>
+        <a asp-page="Index">Powrót do strony Index</a>
+      </div>
+      <ol>
+        @foreach(var name in Model.Names){
+            <li>@name</li>
+        }
+      </ol>
+    </body>
+</html>

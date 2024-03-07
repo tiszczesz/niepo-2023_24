@@ -1,0 +1,31 @@
+﻿@page
+@model MyApp.Namespace.IndexModel
+
+@{
+    int i=0;
+    string imie = "Jan";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strona Index</h1>
+    <div>
+        Zmienna i = @i
+    </div>
+    <div>
+        Zmienna imie = @imie    <br />
+        Dzisiaj mamy: @DateTime.Now
+    </div>
+    <div id="root"></div>
+    <div>
+        <a href="/Index2">do strony Index2</a>
+    </div>
+ <script src="~/script.js" defer></script>
+</body>
+</html>

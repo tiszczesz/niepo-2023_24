@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             button1 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -50,9 +53,23 @@
             button1.Name = "button1";
             button1.Size = new Size(211, 75);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Start";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(560, 53);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(169, 319);
+            listBox1.TabIndex = 2;
             // 
             // Form1
             // 
@@ -60,6 +77,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SandyBrown;
             ClientSize = new Size(1065, 545);
+            Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
@@ -72,5 +90,7 @@
 
         private Label label1;
         private Button button1;
+        private System.Windows.Forms.Timer timer1;
+        private ListBox listBox1;
     }
 }
