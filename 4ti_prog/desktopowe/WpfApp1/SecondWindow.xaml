@@ -19,7 +19,7 @@
                 <Label FontSize="20" FontWeight="Bold" Content="{Binding ElementName=Firstname, Path=Text}"/>
                 <StackPanel Orientation="Horizontal">
                     <Slider Width="400" x:Name="Slider" Minimum="10" Maximum="200"></Slider>
-                    <TextBox Text="{Binding ElementName=Slider, Path=Value}"></TextBox>
+                    <TextBox Text="{Binding ElementName=Slider, Path=Value, StringFormat={}{0:#.0}}"></TextBox>
                    
                 </StackPanel>
             </StackPanel>

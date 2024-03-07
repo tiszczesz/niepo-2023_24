@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -77,8 +77,7 @@
               "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-28T08:02:46.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-28T08:02:46.779Z"
             },
             {
               "$type": "Document",
@@ -90,8 +89,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAUwCEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T08:02:44.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-28T08:02:44.12Z"
             }
           ]
         }
