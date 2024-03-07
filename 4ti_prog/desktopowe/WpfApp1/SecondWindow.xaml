@@ -15,8 +15,13 @@
             <TextBox Height="100" Width="200" Background="BlueViolet"></TextBox>
             <StackPanel>
                 <Button>Fffffffff</Button>
-                <Button>Fffffffff</Button>
-                <Button>Fffffffff</Button>
+                <TextBox x:Name="Firstname" FontSize="20" FontWeight="Bold"></TextBox>
+                <Label FontSize="20" FontWeight="Bold" Content="{Binding ElementName=Firstname, Path=Text}"/>
+                <StackPanel Orientation="Horizontal">
+                    <Slider Width="400" x:Name="Slider" Minimum="10" Maximum="200"></Slider>
+                    <TextBox Text="{Binding ElementName=Slider, Path=Value}"></TextBox>
+                   
+                </StackPanel>
             </StackPanel>
         </DockPanel>
     </Grid>
