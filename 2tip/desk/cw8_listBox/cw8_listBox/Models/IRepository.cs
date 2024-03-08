@@ -8,5 +8,8 @@ namespace cw8_listBox.Models
 {
     public interface IRepository {
         List<Product> GetProducts();
+        Product? GetProductById(int id);
+        void AddProduct(Product? product);
+        void DeleteProduct(int id);
     }
 }
