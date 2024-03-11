@@ -15,6 +15,7 @@ namespace WebEmptyFile.Pages
         public IActionResult OnPost() {
             if (ModelState.IsValid) {
                 //zapisywanie do pliku
+                WelcomeRepo.SaveToFile(MyPerson);
                 return RedirectToPage(nameof(Index));
             }
 
