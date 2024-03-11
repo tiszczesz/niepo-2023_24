@@ -10,6 +10,7 @@ namespace WebEmptyFile.Pages
         public List<Person> Persons { get; set; }
         public void OnGet() {
             Persons = WelcomeRepo.AllFromFile();
+                //todo tabelka na stronie
         }
     }
 }
