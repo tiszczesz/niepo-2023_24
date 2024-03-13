@@ -27,5 +27,9 @@ namespace WebEmptyFile.Models
         [DisplayName("Wybierz datę")]
         [Required(ErrorMessage = "Wybierz datę")]
         public DateOnly? PartyDate { get; set; }
+
+        public override string ToString() {
+            return $"{Id}|{Firstname}|{Lastname}|{Content}|{PartyDate?.ToShortDateString()}";
+        }
     }
 }

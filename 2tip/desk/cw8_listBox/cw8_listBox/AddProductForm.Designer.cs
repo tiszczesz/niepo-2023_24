@@ -32,6 +32,12 @@
             label2 = new Label();
             tbName = new TextBox();
             tbPrice = new NumericUpDown();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            comboBox1 = new ComboBox();
+            label4 = new Label();
+            button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)tbPrice).BeginInit();
             SuspendLayout();
             // 
@@ -70,11 +76,73 @@
             tbPrice.Size = new Size(120, 23);
             tbPrice.TabIndex = 3;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(79, 92);
+            label3.Name = "label3";
+            label3.Size = new Size(31, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Opis";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(126, 92);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(371, 119);
+            textBox1.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "warzywa", "owoce", "nabiał", "napoje", "pieczywo", "słodycze" });
+            comboBox1.Location = new Point(130, 235);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 6;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(67, 238);
+            label4.Name = "label4";
+            label4.Size = new Size(57, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Kategoria";
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.InactiveCaption;
+            button1.Location = new Point(131, 270);
+            button1.Name = "button1";
+            button1.Size = new Size(174, 40);
+            button1.TabIndex = 8;
+            button1.Text = "Zapisz";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Gainsboro;
+            button2.Location = new Point(311, 270);
+            button2.Name = "button2";
+            button2.Size = new Size(174, 40);
+            button2.TabIndex = 9;
+            button2.Text = "Anuluj";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // AddProductForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(524, 331);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
             Controls.Add(tbPrice);
             Controls.Add(tbName);
             Controls.Add(label2);
@@ -95,5 +163,11 @@
         private Label label2;
         private TextBox tbName;
         private NumericUpDown tbPrice;
+        private Label label3;
+        private TextBox textBox1;
+        private ComboBox comboBox1;
+        private Label label4;
+        private Button button1;
+        private Button button2;
     }
 }

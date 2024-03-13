@@ -28,5 +28,17 @@ namespace cw8_listBox.Models
                 },
             };
         }
+
+        public Product? GetProductById(int id) {
+            throw new NotImplementedException();
+        }
+
+        public void AddProduct(Product? product) {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteProduct(int id) {
+            throw new NotImplementedException();
+        }
     }
 }

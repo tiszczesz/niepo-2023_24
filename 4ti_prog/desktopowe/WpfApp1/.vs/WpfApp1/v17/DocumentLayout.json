@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\nwdwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:nwdwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\nwdviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:nwdviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|e:\\tools\\github\\niepo 2023_24\\4ti_prog\\desktopowe\\wpfapp1\\secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|solutionrelative:secondwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B0CD98B-DBC8-4BDC-B4CE-4C047C0433B6}|WpfApp1.csproj|E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +38,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "NWDViewModel.cs",
+              "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\NWDViewModel.cs",
+              "RelativeDocumentMoniker": "NWDViewModel.cs",
+              "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\NWDViewModel.cs",
+              "RelativeToolTip": "NWDViewModel.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAkwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T14:47:54.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NWDWindow.xaml",
+              "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\NWDWindow.xaml",
+              "RelativeDocumentMoniker": "NWDWindow.xaml",
+              "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\NWDWindow.xaml",
+              "RelativeToolTip": "NWDWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-07T14:46:23.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SecondWindow.xaml",
               "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\SecondWindow.xaml",
               "RelativeDocumentMoniker": "SecondWindow.xaml",
@@ -46,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -58,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -66,8 +99,7 @@
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T08:07:10.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-28T08:07:10.857Z"
             },
             {
               "$type": "Document",
@@ -83,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\4ti_prog\\desktopowe\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAqwCEAAAAsAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwCUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T08:02:44.12Z",
               "EditorCaption": ""
