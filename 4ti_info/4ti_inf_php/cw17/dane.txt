@@ -1,0 +1,6 @@
+1;ziemniaki;23.90;ziemniaki nowe...;23-03-2023
+2;marchewka;4.90;czerwone marcheweczki...;12-11-2023
+3;cebula;23.90;odlotowa cebula...;23-03-2023
+4;buraki;6.69;buraki węgierski nowe...;23-03-2023
+5;kapusta;11.69;kapusta duża...;23-03-2023
+6;groszek;12.90;zielony groszek...;23-03-2023
