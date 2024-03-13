@@ -23,6 +23,10 @@
         Dzisiaj mamy: @DateTime.Now
     </div>
     <div id="root"></div>
+    <div>Z ViewData @ViewData["Message"]</div>
+    @if(ViewData["isShow"]!=null && (bool)ViewData["isShow"]){
+        <p>@ViewData["Message2"]</p>
+    }
     <div>
         <a href="/Index2">do strony Index2</a>
     </div>

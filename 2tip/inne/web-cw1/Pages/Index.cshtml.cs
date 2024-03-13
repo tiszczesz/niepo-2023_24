@@ -7,6 +7,9 @@ namespace MyApp.Namespace
     {
         public void OnGet()
         {
+            ViewData["isShow"] = true;
+            ViewData["Message"] = "Hello World";
+            ViewData["Message2"] = "Inna wiadomość";
             
         }
     }
