@@ -32,5 +32,13 @@
             }
             return persons;
         }
+
+        public void SaveAllToFile(List<Person> persons) {
+            var lines = new List<string>();
+            foreach (var person in persons) {
+                lines.Add(person.ToString());
+            }
+            File.WriteAllLines("dane.txt",lines);
+        }
     }
 }
