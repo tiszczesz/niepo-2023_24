@@ -6,6 +6,7 @@ namespace WebEmptyFile.Pages
 {
     public class UpdateModel : PageModel
     {
+        [BindProperty]
         public Person MyPerson { get; set; }
         public IActionResult OnGet(string? id)
         {
