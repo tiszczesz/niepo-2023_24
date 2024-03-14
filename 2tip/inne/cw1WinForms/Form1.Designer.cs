@@ -32,7 +32,8 @@
             label1 = new Label();
             button1 = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
-            listBox1 = new ListBox();
+            personsList = new ListBox();
+            btnLoad = new Button();
             SuspendLayout();
             // 
             // label1
@@ -62,14 +63,24 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
-            // listBox1
+            // personsList
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(560, 53);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(169, 319);
-            listBox1.TabIndex = 2;
+            personsList.FormattingEnabled = true;
+            personsList.ItemHeight = 15;
+            personsList.Location = new Point(318, 38);
+            personsList.Name = "personsList";
+            personsList.Size = new Size(293, 319);
+            personsList.TabIndex = 2;
+            // 
+            // btnLoad
+            // 
+            btnLoad.Location = new Point(651, 39);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(175, 58);
+            btnLoad.TabIndex = 3;
+            btnLoad.Text = "Pobierz dane";
+            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // Form1
             // 
@@ -77,7 +88,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SandyBrown;
             ClientSize = new Size(1065, 545);
-            Controls.Add(listBox1);
+            Controls.Add(btnLoad);
+            Controls.Add(personsList);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
@@ -91,6 +103,7 @@
         private Label label1;
         private Button button1;
         private System.Windows.Forms.Timer timer1;
-        private ListBox listBox1;
+        private ListBox personsList;
+        private Button btnLoad;
     }
 }
