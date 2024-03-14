@@ -13,6 +13,8 @@ namespace WebEmptyFile.Pages
                 var personToDelete = persons.FirstOrDefault(p => p.Id == id);
                 if (personToDelete != null) {
                     //todo usuniecie z listy i zapisanie listy do pliku
+                    persons.Remove(personToDelete);
+                    WelcomeRepo.SaveAllToFile(persons);
                 }
             }
 
