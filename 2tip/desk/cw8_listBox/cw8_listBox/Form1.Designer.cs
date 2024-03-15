@@ -30,13 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            btnDelete = new Button();
             btnAdd = new Button();
             lbCoumt = new Label();
             label1 = new Label();
             btnLoad = new Button();
             lbProducts = new ListBox();
             fakeRepoBindingSource = new BindingSource(components);
-            btnDelete = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fakeRepoBindingSource).BeginInit();
             SuspendLayout();
@@ -54,6 +54,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 450);
             panel1.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(12, 158);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(172, 50);
+            btnDelete.TabIndex = 4;
+            btnDelete.Text = "Usuń wybrany produkt";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -108,15 +118,6 @@
             // fakeRepoBindingSource
             // 
             fakeRepoBindingSource.DataSource = typeof(Models.FakeRepo);
-            // 
-            // btnDelete
-            // 
-            btnDelete.Location = new Point(12, 158);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(172, 50);
-            btnDelete.TabIndex = 4;
-            btnDelete.Text = "Usuń wybrany produkt";
-            btnDelete.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

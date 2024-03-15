@@ -13,7 +13,8 @@ namespace cw8_listBox
             Products = _repository.GetProducts();
         }
 
-        private void btnLoad_Click(object sender, EventArgs e) {
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
             lbProducts.DataSource = Products;
         }
 
@@ -31,6 +32,17 @@ namespace cw8_listBox
             lbProducts.DataSource = null;
             lbProducts.DataSource = Products;
             //Zapis do pliku ale po zmianie repozytorium
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var product = lbProducts.SelectedItem as Product;
+            if (product != null) {
+                Products.Remove(product);
+                lbProducts.DataSource = null;
+                lbProducts.DataSource = Products;
+            }
+            
         }
     }
 }
