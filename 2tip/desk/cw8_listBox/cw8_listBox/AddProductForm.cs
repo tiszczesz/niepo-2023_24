@@ -24,5 +24,21 @@ namespace cw8_listBox
         {
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var products = _form.Products;
+            var lastId = products.Max(p => p.Id);
+            //BRAK WALIDACJI
+            var product = new Product {
+                Id = lastId + 1,
+                Name = tbName.Text.Trim(),
+                Description = tbDescription.Text.Trim(),
+                Category = cbCategory.SelectedItem?.ToString(),
+                Price = Convert.ToDecimal(tbPrice.Text)
+            };
+            products.Add(product);
+            Close();
+        }
     }
 }

@@ -33,8 +33,8 @@
             tbName = new TextBox();
             tbPrice = new NumericUpDown();
             label3 = new Label();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
+            tbDescription = new TextBox();
+            cbCategory = new ComboBox();
             label4 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -85,22 +85,23 @@
             label3.TabIndex = 4;
             label3.Text = "Opis";
             // 
-            // textBox1
+            // tbDescription
             // 
-            textBox1.Location = new Point(126, 92);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(371, 119);
-            textBox1.TabIndex = 5;
+            tbDescription.Location = new Point(126, 92);
+            tbDescription.Multiline = true;
+            tbDescription.Name = "tbDescription";
+            tbDescription.Size = new Size(371, 119);
+            tbDescription.TabIndex = 5;
             // 
-            // comboBox1
+            // cbCategory
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "warzywa", "owoce", "nabiał", "napoje", "pieczywo", "słodycze" });
-            comboBox1.Location = new Point(130, 235);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
+            cbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCategory.FormattingEnabled = true;
+            cbCategory.Items.AddRange(new object[] { "warzywa", "owoce", "nabiał", "napoje", "pieczywo", "słodycze" });
+            cbCategory.Location = new Point(130, 235);
+            cbCategory.Name = "cbCategory";
+            cbCategory.Size = new Size(121, 23);
+            cbCategory.TabIndex = 6;
             // 
             // label4
             // 
@@ -120,6 +121,7 @@
             button1.TabIndex = 8;
             button1.Text = "Zapisz";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -140,8 +142,8 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(cbCategory);
+            Controls.Add(tbDescription);
             Controls.Add(label3);
             Controls.Add(tbPrice);
             Controls.Add(tbName);
@@ -164,8 +166,8 @@
         private TextBox tbName;
         private NumericUpDown tbPrice;
         private Label label3;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
+        private TextBox tbDescription;
+        private ComboBox cbCategory;
         private Label label4;
         private Button button1;
         private Button button2;

@@ -30,6 +30,7 @@ namespace cw8_listBox
             new AddProductForm(this).ShowDialog();
             lbProducts.DataSource = null;
             lbProducts.DataSource = Products;
+            //Zapis do pliku ale po zmianie repozytorium
         }
     }
 }

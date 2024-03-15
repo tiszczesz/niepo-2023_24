@@ -36,6 +36,7 @@
             btnLoad = new Button();
             lbProducts = new ListBox();
             fakeRepoBindingSource = new BindingSource(components);
+            btnDelete = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fakeRepoBindingSource).BeginInit();
             SuspendLayout();
@@ -43,6 +44,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(255, 224, 192);
+            panel1.Controls.Add(btnDelete);
             panel1.Controls.Add(btnAdd);
             panel1.Controls.Add(lbCoumt);
             panel1.Controls.Add(label1);
@@ -107,6 +109,15 @@
             // 
             fakeRepoBindingSource.DataSource = typeof(Models.FakeRepo);
             // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(12, 158);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(172, 50);
+            btnDelete.TabIndex = 4;
+            btnDelete.Text = "Usuń wybrany produkt";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -131,5 +142,6 @@
         private Label lbCoumt;
         private Label label1;
         private Button btnAdd;
+        private Button btnDelete;
     }
 }
