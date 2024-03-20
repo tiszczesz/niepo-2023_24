@@ -1,0 +1,42 @@
+﻿@page
+@model MyApp.Namespace.FormModelModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dodawanie nowej gry</h1>
+    <form  method="post">
+        <label asp-for="@Model.MyGame.Title"></label>
+        <input asp-for="@Model.MyGame.Title">
+        <span class="error" asp-validation-for="@Model.MyGame.Title"></span>
+        <br>
+         <label asp-for="@Model.MyGame.Price"></label>
+        <input type="number" asp-for="@Model.MyGame.Price" step="0.01">
+        <span class="error" asp-validation-for="@Model.MyGame.Price"></span>
+        <br>
+         <label asp-for="@Model.MyGame.Genre"></label>
+        <select asp-for="@Model.MyGame.Genre">
+            @if(ViewData["genres"]!=null){
+                @foreach(var genre in ViewData["genres"] as List<string>){
+                    <option value="@genre">@genre</option>
+                }
+            }
+        </select>
+        <br>
+        <input type="submit" value="Zapisz">
+    </form>
+    <hr>
+    @if((bool)ViewData["post"]){
+        <div>
+            @* tu będą informacje o grze ale z modelu @Model. *@
+        </div>
+    }
+</body>
+</html>
