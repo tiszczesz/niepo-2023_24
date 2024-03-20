@@ -16,7 +16,7 @@
             <a class="navbar-brand" href="cw17.php">Strona główna</a>
             <a class="navbar-brand" href="AddProduct.php">Dodaj produkt</a>
             <a class="navbar-brand" href="Kontakt.html">Kontakt</a>
-        
+
         </div>
 
 
@@ -24,14 +24,35 @@
 
 
     <main>
-       
+
         <?php
         require_once "functions.php";
         $products = getProducts();
         ?>
         <div class="container">
             <main>
-               <h3>Nowy produkt</h3>
+                <h3>Nowy produkt</h3>
+                <form method="post" action="addNew.php">
+                    <div class="row mt-3">
+                        <label class="col-3 text-end" for="name">Nazwa</label>
+                        <input type="text" class="col-6" name="name" id="name" />
+                    </div>
+                    <div class="row mt-3">
+                        <label class="col-3 text-end" for="description">Opis</label>
+                        <input type="text" class="col-6" name="description" id="description" />
+                    </div>
+                    <div class="row mt-3">
+                        <label class="col-3 text-end" for="price">Cena</label>
+                        <input type="number" step="0.1" class="col-6" name="price" id="price" />
+                    </div>
+                    <div class="row mt-3">
+                        <label class="col-3 text-end" for="date">Data</label>
+                        <input type="date" class="col-6" name="date" id="date" />
+                    </div>
+                    <div class="row mt-3">
+                        <input type="submit" class="btn btn-primary col-6 offset-3" value="Zapisz"  name="save" id="save" />
+                    </div>
+                </form>
             </main>
         </div>
     </main>
