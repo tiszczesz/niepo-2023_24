@@ -34,6 +34,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             personsList = new ListBox();
             btnLoad = new Button();
+            btnAddForm = new Button();
             SuspendLayout();
             // 
             // label1
@@ -82,12 +83,23 @@
             btnLoad.UseVisualStyleBackColor = true;
             btnLoad.Click += btnLoad_Click;
             // 
+            // btnAddForm
+            // 
+            btnAddForm.Location = new Point(651, 108);
+            btnAddForm.Name = "btnAddForm";
+            btnAddForm.Size = new Size(175, 58);
+            btnAddForm.TabIndex = 4;
+            btnAddForm.Text = "Dodaj nowe";
+            btnAddForm.UseVisualStyleBackColor = true;
+            btnAddForm.Click += btnAddForm_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SandyBrown;
             ClientSize = new Size(1065, 545);
+            Controls.Add(btnAddForm);
             Controls.Add(btnLoad);
             Controls.Add(personsList);
             Controls.Add(button1);
@@ -105,5 +117,6 @@
         private System.Windows.Forms.Timer timer1;
         private ListBox personsList;
         private Button btnLoad;
+        private Button btnAddForm;
     }
 }
