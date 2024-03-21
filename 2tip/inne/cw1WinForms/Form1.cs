@@ -6,9 +6,10 @@ namespace cw1WinForms
     public partial class Form1 : Form
     {
         private bool isStart = false;
-        private PersonsRepo _repo ;
+        private PersonsRepo _repo;
+        public List<Person>? Persons { get; set; }
         public Form1()
-        {
+        {   
             InitializeComponent();
             _repo = new PersonsRepo();
         }
@@ -38,8 +39,13 @@ namespace cw1WinForms
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            var persons = _repo.Persons;
-            personsList.DataSource = persons;
+            Persons = _repo.Persons;
+            personsList.DataSource = Persons;
+        }
+
+        private void btnAddForm_Click(object sender, EventArgs e)
+        {
+            new FormAdd(this).ShowDialog();
         }
     }
 }

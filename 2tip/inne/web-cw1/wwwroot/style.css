@@ -4,3 +4,6 @@ body{
 .container{
     margin: 20px;
 }
+.error{
+    color: red;
+}
