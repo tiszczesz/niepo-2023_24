@@ -43,7 +43,7 @@
                     </div>
                     <div class="row mt-3">
                         <label class="col-3 text-end" for="price">Cena</label>
-                        <input type="number" step="0.1" class="col-6" name="price" id="price" />
+                        <input type="number" step="0.1" class="col-6" name="price" id="price" step="0.1"/>
                     </div>
                     <div class="row mt-3">
                         <label class="col-3 text-end" for="date">Data</label>

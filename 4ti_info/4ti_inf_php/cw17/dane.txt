@@ -4,3 +4,7 @@
 4;buraki;6.69;buraki węgierski nowe...;23-03-2023
 5;kapusta;11.69;kapusta duża...;23-03-2023
 6;groszek;12.90;zielony groszek...;23-03-2023
+7;Truskawki;12;;2024-03-20
+8;pomarańcze;23.90;asd sad ada das;2024-04-12
+9;test;12.7;test;2023-12-12
+10;trochę późno;23.5;asd as dad;2024-03-14

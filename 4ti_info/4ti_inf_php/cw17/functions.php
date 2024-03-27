@@ -22,3 +22,10 @@ function GetProducts(string $path="dane.txt") : array {
     }
     return $products;
 }
+function getMaxId(array $products) : int {
+    $max = -1;
+    foreach($products as $p){
+        if($p->Id>$max) $max = $p->Id;
+    }
+    return $max;
+}
