@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style>
+        /* Styl dla kontenera i elementu do przeciągania */
+        #drag-container {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #drag-container2 {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .toDragg {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            border: solid 1px black;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            cursor: move;
+        }
+        .dragContainer{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="drag-container" class="draggContainer">
+        <div id="drag-item" class="toDragg" draggable="true">
+            Drag Me!
+        </div>
+        <div id="drag-item2" class="toDragg" draggable="true">
+            Drag Me!
+        </div>
+    </div>
+    <div id="drag-container2">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
