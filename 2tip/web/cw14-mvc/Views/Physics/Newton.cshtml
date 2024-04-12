@@ -1,0 +1,38 @@
+﻿@model string
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/site.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Zasady Dynamiki Newtona</h3>
+    <dl>
+        <dt>
+            Pierwsza zasada Dynamiki Newtona
+        </dt>
+        <dd>
+            Opis zasady
+        </dd>
+        <dt>
+            Druga zasada Dynamiki Newtona
+        </dt>
+        <dd>
+            Opis zasady
+        </dd>
+        <dt>
+            Trzecia zasada Dynamiki Newtona
+        </dt>
+        <dd>
+            Opis zasady
+        </dd>
+    </dl>
+    @if(Model!=null){
+        <p>@Model</p>
+    }else{
+        <p>Brak definicji modelu</p>
+    }
+</body>
+</html>

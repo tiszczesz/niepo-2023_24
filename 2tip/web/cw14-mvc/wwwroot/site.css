@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    border-bottom: 1px black solid;
+    margin: auto;
+}
+body{
+    background-color: bisque;
+}
+dd{
+    border-bottom: solid 1px grey;
+}
+dt{
+    font-size: 2rem;
+    font-weight: bold;
+    color:red;
+    margin: 10px 20px 10px 10px;
+}

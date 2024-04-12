@@ -1,15 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/site.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello from view Index2 in Home controller</h1>
-    <div>
-        Dzisiaj mamy: @DateTime.Now
-    </div>
+    <pre>
+    <?php
+    $conn = new mysqli("localhost","root",null,"test");
+    var_dump($conn);
+    ?>
+    </pre>
 </body>
 </html>
