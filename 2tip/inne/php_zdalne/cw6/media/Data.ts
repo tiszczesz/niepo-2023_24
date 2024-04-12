@@ -1,4 +1,4 @@
-import Pierogi from './pierogi.jpg';
+/*import Pierogi from './pierogi.jpg';
 import Barszcz_czerwony from './barszcz-wigilijny.jpg';
 import Karp from './karp_po_zydowsku_.jpg';
 import Kutia from './kutia.jpg';
@@ -90,3 +90,5 @@ export const Recipes:Recipe[] = [
         img:Szarlotka
     }
 ]
+
+*/
