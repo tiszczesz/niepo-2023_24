@@ -38,7 +38,15 @@
             openFileDialog1 = new OpenFileDialog();
             textBox1 = new TextBox();
             panel1 = new Panel();
+            btnGo = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            lbLines = new Label();
+            lbChars = new Label();
+            lbLetter = new Label();
             menuStrip1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -102,15 +110,88 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(600, 426);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // panel1
             // 
             panel1.BackColor = Color.PeachPuff;
+            panel1.Controls.Add(lbLetter);
+            panel1.Controls.Add(lbChars);
+            panel1.Controls.Add(lbLines);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(btnGo);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 24);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 426);
             panel1.TabIndex = 2;
+            // 
+            // btnGo
+            // 
+            btnGo.Enabled = false;
+            btnGo.Location = new Point(3, 15);
+            btnGo.Name = "btnGo";
+            btnGo.Size = new Size(191, 39);
+            btnGo.TabIndex = 0;
+            btnGo.Text = "Wykonaj statystyki";
+            btnGo.UseVisualStyleBackColor = true;
+            btnGo.Click += btnGo_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(36, 68);
+            label1.Name = "label1";
+            label1.Size = new Size(53, 15);
+            label1.TabIndex = 1;
+            label1.Text = "ilość lini:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(32, 122);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 15);
+            label2.TabIndex = 2;
+            label2.Text = "ilość liter:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 93);
+            label3.Name = "label3";
+            label3.Size = new Size(77, 15);
+            label3.TabIndex = 3;
+            label3.Text = "ilość znaków:";
+            // 
+            // lbLines
+            // 
+            lbLines.AutoSize = true;
+            lbLines.Location = new Point(106, 68);
+            lbLines.Name = "lbLines";
+            lbLines.Size = new Size(13, 15);
+            lbLines.TabIndex = 4;
+            lbLines.Text = "0";
+            // 
+            // lbChars
+            // 
+            lbChars.AutoSize = true;
+            lbChars.Location = new Point(106, 93);
+            lbChars.Name = "lbChars";
+            lbChars.Size = new Size(13, 15);
+            lbChars.TabIndex = 5;
+            lbChars.Text = "0";
+            // 
+            // lbLetter
+            // 
+            lbLetter.AutoSize = true;
+            lbLetter.Location = new Point(106, 122);
+            lbLetter.Name = "lbLetter";
+            lbLetter.Size = new Size(13, 15);
+            lbLetter.TabIndex = 6;
+            lbLetter.Text = "0";
             // 
             // Form1
             // 
@@ -125,6 +206,8 @@
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,5 +223,12 @@
         private OpenFileDialog openFileDialog1;
         private TextBox textBox1;
         private Panel panel1;
+        private Button btnGo;
+        private Label label1;
+        private Label lbLetter;
+        private Label lbChars;
+        private Label lbLines;
+        private Label label3;
+        private Label label2;
     }
 }
