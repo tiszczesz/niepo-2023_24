@@ -1,0 +1,17 @@
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\bin\Debug\net8.0-windows\Movvv.exe
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\bin\Debug\net8.0-windows\Movvv.deps.json
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\bin\Debug\net8.0-windows\Movvv.runtimeconfig.json
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\bin\Debug\net8.0-windows\Movvv.dll
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\bin\Debug\net8.0-windows\Movvv.pdb
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.Form1.resources
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.csproj.GenerateResource.cache
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.GeneratedMSBuildEditorConfig.editorconfig
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.AssemblyInfoInputs.cache
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.AssemblyInfo.cs
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.csproj.CoreCompileInputs.cache
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.sourcelink.json
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.dll
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\refint\Movvv.dll
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.pdb
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\Movvv.genruntimeconfig.cache
+E:\tools\GitHub\niepo 2023_24\trash\Movvv\obj\Debug\net8.0-windows\ref\Movvv.dll

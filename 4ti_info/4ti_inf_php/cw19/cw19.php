@@ -8,7 +8,10 @@
 </head>
 
 <body>
-    <pre>
+   <h1>Lista userów</h1>
+   <div>
+    <a href="cw19_1.php">Tabelka użytkowników</a>
+   </div>
     <?php
     $conn = new mysqli("localhost", "root", null, "4ti_inf_2024_cw1");
     $conn->set_charset("utf8"); //ustawienie kodowania połączenia
@@ -17,34 +20,21 @@
     $sqlQuery = "SELECT firstname,lastname,division FROM students ";
     $result = $conn->query($sqlQuery);
     var_dump($result);
-    //$data = $result->fetch_all();
-    //fetch_row() kilka razy 
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-    $row = $result->fetch_row();
-    var_dump($row);
-
+    //$data = $result->fetch_all();    
+    //$row = $result->fetch_row();
+   // $row = $result->fetch_array();
+   // var_dump($row);
+   // $row = $result->fetch_assoc();
+   // var_dump($row);
+   echo gettype(13.0);
+    echo "<ul>\n";
+    while($row = $result->fetch_row()){
+        echo "<li>Imię: {$row[0]}, nazwisko: {$row[1]}, klasa: {$row[2]}</li>\n";
+    }
+    echo "</ul>\n";
     $conn->close();//!!!!!!!
     ?>
-    </pre>
+  
 </body>
 
 </html>
