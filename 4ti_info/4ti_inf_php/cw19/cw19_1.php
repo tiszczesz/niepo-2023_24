@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cw19.css">
     <title>Document</title>
-    <style>
-        table{border-collapse: collapse;margin: auto; text-align: center;width: 70%;}
-        th{background-color: lightgray; color: brown;padding: 10px;}
-        th,td{border: solid 1px black;}
-    </style>
+   
 </head>
 <body>
     <h1>Tabelka z użytkownikami</h1>
@@ -32,5 +29,9 @@
     $conn->close();
     ?>
     </table>
+
+    <div>
+        <a href="insert.html">dodaj użytkownika</a>
+    </div>
 </body>
 </html>
