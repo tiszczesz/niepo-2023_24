@@ -13,4 +13,5 @@ public class StudentController :Controller
       };
     return View(student);
    }
+   //widok listy studentow w akcji List
 }
