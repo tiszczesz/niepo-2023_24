@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cw7.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dodawanie nowego użytkownika</h1>
+    <form action="addNew.php" method="post">
+        <div class="line">
+            <input type="text" name="firstname" id="firstname" required placeholder="Podaj imię">
+        </div>
+        <div class="line">
+            <input type="text" name="lastname" id="lastname" required placeholder="Podaj nazwisko">
+        </div>
+        <div class="line">
+            <input type="date" name="date" id="date" required placeholder="Podaj datę rejestracji">
+        </div>
+        <div class="line">
+            <input type="submit" value="Zapisz"> 
+            <input type="reset" value="Wyczyść">
+        </div>
+    </form>
+</body>
+</html>
