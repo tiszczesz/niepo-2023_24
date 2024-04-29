@@ -14,17 +14,18 @@
         <th>Imię</th>
         <th>Nazwisko</th>
         <th>Klasa</th>
+        <th></th>
     </tr>
     <?php
     $conn = new mysqli("localhost","root",null,"4ti_inf_2024_cw1");
     if($conn->connect_errno!=0) die("Błąd połączenia");
     $conn->set_charset("utf8");
-    $sql = "SELECT firstname,lastname,division FROM students";
+    $sql = "SELECT id,firstname,lastname,division FROM students";
     $result = $conn->query($sql); //wykonanie zapytania do bazy
     while($row=$result->fetch_assoc()){
         echo "<tr>\n";
         echo "<td>{$row['firstname']}</td><td>{$row['lastname']}</td><td>{$row['division']}</td>\n";
-        echo "</tr>\n";
+        echo "<td><a href='delete.php?id={$row['id']}'>Usuń</a></td></tr>\n";
     }
     $conn->close();
     ?>

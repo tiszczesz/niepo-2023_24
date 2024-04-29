@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>dodawanie użytkownika</h1>
+    <form action="result.php" method="post">
+        <div class="line">
+            <input type="text" name="firstname" id="firstname" placeholder="podaj imię">
+        </div>
+        <div class="line">
+            <input type="text" name="lastname" id="lastname" placeholder="podaj nazwisko">
+        </div>
+        <div class="line">
+            <label for="division">Wybierz klasę: </label>
+           <select name="division" id="division">
+            <option value="1A">1A</option>
+            <option value="1B">1B</option>
+            <option value="1C">1C</option>
+            <option value="1D">1D</option>
+           </select>
+        </div>
+        <div class="line">
+            <input type="submit" value="zapisz">
+            <input type="reset" value="wyczyść">
+        </div>
+    </form>
 </body>
 </html>
