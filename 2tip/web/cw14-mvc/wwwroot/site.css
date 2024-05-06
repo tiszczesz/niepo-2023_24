@@ -15,3 +15,14 @@ dt{
     color:red;
     margin: 10px 20px 10px 10px;
 }
+table{
+    border-collapse: collapse;
+    border: solid 1px brown;
+}
+td,th{
+    border: solid 1px brown;
+    padding: 10px;
+}
+th{
+    background-color: lightsalmon;
+}

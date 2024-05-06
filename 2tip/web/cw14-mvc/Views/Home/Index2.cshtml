@@ -10,6 +10,19 @@
     <h1>Hello from view Index2 in Home controller</h1>
     <div>
         Dzisiaj mamy: @DateTime.Now
+        <nav>
+            <ul>
+                <li>
+                    <a asp-controller="Students" asp-action="Show">do akcji Show</a>
+                </li>
+                <li>
+                    <a asp-controller="Physics" asp-action="Newton">Zasady dynamiki</a>
+                </li>
+                <li>
+                    <a asp-controller="Students" asp-action="List">Zasady dynamiki</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </body>
 </html>

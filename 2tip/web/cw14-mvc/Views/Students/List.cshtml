@@ -1,0 +1,32 @@
+@using cw14_mvc.Models
+@model List<cw14_mvc.Models.Student>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/site.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista studentów</h1>
+    <table>
+        <tr>
+            <th>Lp</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+        </tr>
+        @{ int lp = 0;}
+        @foreach(Student s in Model){
+            lp++;
+            <tr>
+                <td>@lp</td>
+                <td>@s.FirstName</td>
+                <td>@s.LastName</td>
+                <td>@s.Age</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
