@@ -20,6 +20,8 @@ namespace cw1_csv
                     MessageBox.Show("B³êdy format pliku CSV!!");
                 }
             }
+
+            var dir = AppContext.BaseDirectory;
         }
     }
 }
