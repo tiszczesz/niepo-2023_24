@@ -18,6 +18,7 @@
             <th>Imię</th>
             <th>Nazwisko</th>
             <th>Data rejestracji</th>
+            <th>Dodatkowe operacje</th>
         </tr>
         <?php
         $conn = new mysqli("localhost", "root", null, "2ti_inne_cw1");
@@ -30,8 +31,11 @@
             echo "\t<td>{$row['firstname']}</td>\n";
             echo "\t<td>{$row['lastname']}</td>\n";
             echo "\t<td>{$row['date']}</td>\n";
+            echo "\t<td><a href='delete.php?id={$row['id']}'>Usuń</a></td>\n";
             echo "</tr>\n";
         }
+        //CRUD
+        $conn->close();
         ?>
     </table>
 </body>
