@@ -10,6 +10,21 @@ public class FilmsController : Controller
         _reop = new FilmsRepo(configuration);
     }
     public IActionResult List(){
+        var films = _reop.GetFilms();
+        return View(films);
+    }
+    [HttpGet]
+    public IActionResult InserFilm(){
         return View();
+    }
+    [HttpPost]
+    public IActionResult InserFilm(Film? film){
+        if(film!=null){ 
+            if(ModelState.IsValid){
+                _reop.InserFilm(); 
+                return RedirectToAction("List");
+            }           
+        }
+        return View(film);
     }
 }
