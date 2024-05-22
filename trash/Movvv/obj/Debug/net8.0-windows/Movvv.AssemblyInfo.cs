@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Movvv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ff30606a29a44baa252596b9872f659dbbc1fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a8769bfc2228c1c0401bdb0faadbd41f1196343")]
 [assembly: System.Reflection.AssemblyProductAttribute("Movvv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Movvv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
