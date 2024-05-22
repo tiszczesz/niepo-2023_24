@@ -5,23 +5,23 @@ namespace cw6_mvc.Controllers;
 
 public class FilmsController : Controller
 {
-    private readonly FilmsRepo _reop;
+    private readonly FilmsRepo _repo;
     public FilmsController(IConfiguration configuration){
-        _reop = new FilmsRepo(configuration);
+        _repo = new FilmsRepo(configuration);
     }
     public IActionResult List(){
-        var films = _reop.GetFilms();
+        var films = _repo.GetFilms();
         return View(films);
     }
     [HttpGet]
-    public IActionResult InserFilm(){
+    public IActionResult InsertFilm(){
         return View();
     }
     [HttpPost]
-    public IActionResult InserFilm(Film? film){
+    public IActionResult InsertFilm(Film? film){
         if(film!=null){ 
             if(ModelState.IsValid){
-                _reop.InserFilm(); 
+                _repo.InserFilm(); 
                 return RedirectToAction("List");
             }           
         }
