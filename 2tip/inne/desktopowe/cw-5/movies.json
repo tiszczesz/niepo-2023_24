@@ -1,73 +1,73 @@
 [
   {
-    "id": "1",
-    "title": "Inception",
-    "director": "Christopher Nolan",
-    "date": "2010-07-16",
-    "length": "148"
+    "Id": 1,
+    "Title": "Inception",
+    "Director": "Christopher Nolan",
+    "Date": "2010-07-16",
+    "Length": 148
   },
   {
-    "id": "2",
-    "title": "The Matrix",
-    "director": "Lana Wachowski, Lilly Wachowski",
-    "date": "1999-03-31",
-    "length": "136"
+    "Id": 2,
+    "Title": "The Matrix",
+    "Director": "Lana Wachowski, Lilly Wachowski",
+    "Date": "1999-03-31",
+    "Length": 136
   },
   {
-    "id": "3",
-    "title": "The Shawshank Redemption",
-    "director": "Frank Darabont",
-    "date": "1994-09-23",
-    "length": "142"
+    "Id": 3,
+    "Title": "The Shawshank Redemption",
+    "Director": "Frank Darabont",
+    "Date": "1994-09-23",
+    "Length": 142
   },
   {
-    "id": "4",
-    "title": "Pulp Fiction",
-    "director": "Quentin Tarantino",
-    "date": "1994-10-14",
-    "length": "154"
+    "Id": 4,
+    "Title": "Pulp Fiction",
+    "Director": "Quentin Tarantino",
+    "Date": "1994-10-14",
+    "Length": 154
   },
   {
-    "id": "5",
-    "title": "The Dark Knight",
-    "director": "Christopher Nolan",
-    "date": "2008-07-18",
-    "length": "152"
+    "Id": 5,
+    "Title": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Date": "2008-07-18",
+    "Length": 152
   },
   {
-    "id": "6",
-    "title": "Fight Club",
-    "director": "David Fincher",
-    "date": "1999-10-15",
-    "length": "139"
+    "Id": 6,
+    "Title": "Fight Club",
+    "Director": "David Fincher",
+    "Date": "1999-10-15",
+    "Length": 139
   },
   {
-    "id": "7",
-    "title": "Forrest Gump",
-    "director": "Robert Zemeckis",
-    "date": "1994-07-06",
-    "length": "142"
+    "id": 7,
+    "Title": "Forrest Gump",
+    "Director": "Robert Zemeckis",
+    "Date": "1994-07-06",
+    "Length": 142
   },
   {
-    "id": "8",
-    "title": "The Godfather",
-    "director": "Francis Ford Coppola",
-    "date": "1972-03-24",
-    "length": "175"
+    "Id": 8,
+    "Title": "The Godfather",
+    "Director": "Francis Ford Coppola",
+    "Date": "1972-03-24",
+    "Length": 175
   },
   {
-    "id": "9",
-    "title": "The Lord of the Rings: The Return of the King",
-    "director": "Peter Jackson",
-    "date": "2003-12-17",
-    "length": "201"
+    "Id": 9,
+    "Title": "The Lord of the Rings: The Return of the King",
+    "Director": "Peter Jackson",
+    "Date": "2003-12-17",
+    "Length": 201
   },
   {
-    "id": "10",
-    "title": "Star Wars: Episode IV - A New Hope",
-    "director": "George Lucas",
-    "date": "1977-05-25",
-    "length": "121"
+    "Id": 10,
+    "Title": "Star Wars: Episode IV - A New Hope",
+    "Director": "George Lucas",
+    "Date": "1977-05-25",
+    "Length": 121
   }
 ]
 

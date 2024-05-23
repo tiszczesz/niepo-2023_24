@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
             btnLoad = new Button();
+            dataGridView1 = new DataGridView();
+            openFileDialog1 = new OpenFileDialog();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -45,6 +46,16 @@
             panel1.Size = new Size(200, 450);
             panel1.TabIndex = 0;
             // 
+            // btnLoad
+            // 
+            btnLoad.Location = new Point(3, 12);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new Size(191, 23);
+            btnLoad.TabIndex = 0;
+            btnLoad.Text = "Wczytaj plik";
+            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
+            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -54,14 +65,10 @@
             dataGridView1.Size = new Size(600, 450);
             dataGridView1.TabIndex = 1;
             // 
-            // btnLoad
+            // openFileDialog1
             // 
-            btnLoad.Location = new Point(3, 12);
-            btnLoad.Name = "btnLoad";
-            btnLoad.Size = new Size(191, 23);
-            btnLoad.TabIndex = 0;
-            btnLoad.Text = "Wczytaj plik";
-            btnLoad.UseVisualStyleBackColor = true;
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.Filter = "pliki json | *.json | wszystkie pliki | *.*";
             // 
             // Form1
             // 
@@ -82,5 +89,6 @@
         private Panel panel1;
         private Button btnLoad;
         private DataGridView dataGridView1;
+        private OpenFileDialog openFileDialog1;
     }
 }
