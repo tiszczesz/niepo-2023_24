@@ -1,0 +1,73 @@
+[
+  {
+    "Id": 1,
+    "Title": "Inception",
+    "Director": "Christopher Nolan",
+    "Date": "2010-07-16",
+    "Length": 148
+  },
+  {
+    "Id": 2,
+    "Title": "The Matrix",
+    "Director": "Lana Wachowski, Lilly Wachowski",
+    "Date": "1999-03-31",
+    "Length": 136
+  },
+  {
+    "Id": 3,
+    "Title": "The Shawshank Redemption",
+    "Director": "Frank Darabont",
+    "Date": "1994-09-23",
+    "Length": 142
+  },
+  {
+    "Id": 4,
+    "Title": "Pulp Fiction",
+    "Director": "Quentin Tarantino",
+    "Date": "1994-10-14",
+    "Length": 154
+  },
+  {
+    "Id": 5,
+    "Title": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Date": "2008-07-18",
+    "Length": 152
+  },
+  {
+    "Id": 6,
+    "Title": "Fight Club",
+    "Director": "David Fincher",
+    "Date": "1999-10-15",
+    "Length": 139
+  },
+  {
+    "id": 7,
+    "Title": "Forrest Gump",
+    "Director": "Robert Zemeckis",
+    "Date": "1994-07-06",
+    "Length": 142
+  },
+  {
+    "Id": 8,
+    "Title": "The Godfather",
+    "Director": "Francis Ford Coppola",
+    "Date": "1972-03-24",
+    "Length": 175
+  },
+  {
+    "Id": 9,
+    "Title": "The Lord of the Rings: The Return of the King",
+    "Director": "Peter Jackson",
+    "Date": "2003-12-17",
+    "Length": 201
+  },
+  {
+    "Id": 10,
+    "Title": "Star Wars: Episode IV - A New Hope",
+    "Director": "George Lucas",
+    "Date": "1977-05-25",
+    "Length": 121
+  }
+]
+
