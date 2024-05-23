@@ -13,6 +13,10 @@ fun main(){
     print("Podaj tekst: ")
     val tekst = readln()
     println("tekst: ${tekst}")
+    println("-------------------------------------------")
+    print("Podaj tekst: ");
+    val text = readln();
+    println("Ilość cyfr w tekście: $text -> ${HowManyDigits(text)}")
 }
 
 fun readFile(fileName:String){
@@ -20,4 +24,7 @@ fun readFile(fileName:String){
 }
 fun reafFileToList(fileName: String):List<String>{
     return File(fileName).useLines { it->it.toList() }
+}
+fun HowManyDigits(data:String):Int{
+    return data.count{it->it.isDigit()}
 }
