@@ -52,4 +52,17 @@ public class FilmsRepo
             connection.Close();
         }
     }
+
+    public void Delete(int? id)
+    {
+        if(id == null) return;
+        using (SqliteConnection conn = new SqliteConnection(_connString)){
+            SqliteCommand command = conn.CreateCommand();
+            command.CommandText=$"DELETE FROM films WHERE id={id}";
+            conn.Open();
+            command.ExecuteNonQuery();
+            conn.Close();
+        }
+     
+    }
 }
