@@ -21,7 +21,7 @@ public class FilmsController : Controller
     public IActionResult InsertFilm(Film? film){
         if(film!=null){ 
             if(ModelState.IsValid){
-                _repo.InserFilm(); 
+                _repo.InserFilm(film); 
                 return RedirectToAction("List");
             }           
         }
