@@ -16,6 +16,7 @@ dt{
     margin: 10px 20px 10px 10px;
 }
 table{
+    margin-left: 30px;
     border-collapse: collapse;
     border: solid 1px brown;
 }

@@ -13,6 +13,8 @@ public class StudentsController : Controller
     public IActionResult List()
     {
         var students = StudentRepo.GetStudents();
+        double avg = students.Average(x => x.Age) ?? -1;
+        ViewBag.avg = Math.Round(avg, 2);
         return View(students);
     }
 }

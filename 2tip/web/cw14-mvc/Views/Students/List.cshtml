@@ -1,13 +1,14 @@
-
 @model List<Student>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/site.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Lista studentów</h1>
     <table>
@@ -17,8 +18,11 @@
             <th>Nazwisko</th>
             <th>Wiek</th>
         </tr>
-        @{ int lp = 0;}
-        @foreach(Student s in Model){
+        @{
+            int lp = 0;
+        }
+        @foreach (Student s in Model)
+        {
             lp++;
             <tr>
                 <td>@lp</td>
@@ -28,5 +32,17 @@
             </tr>
         }
     </table>
+    <hr>
+    <h3>Podsumowanie informacji:</h3>
+    @if (@ViewBag.avg == -1)
+    {
+        <p>BRAK DANYCH</p>
+    }
+    else
+    {
+        <p>Średni wiek studentów: @ViewBag.avg. Ilość studentów: @Model.Count</p>
+    }
+
 </body>
+
 </html>
