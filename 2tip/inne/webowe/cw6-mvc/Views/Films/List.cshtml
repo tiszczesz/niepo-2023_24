@@ -5,13 +5,17 @@
     <thead>
         <th>Lp</th>
         <th>Tytuł</th>
-        <th>Reżyser</th>        
+        <th>Reżyser</th>
         <th>Rok wydania</th>
         <th>Cena</th>
+        <th>----</th>
     </thead>
     <tbody>
-        @{int lp = 0;}
-        @foreach(var film in Model){
+        @{
+            int lp = 0;
+        }
+        @foreach (var film in Model)
+        {
             lp++;
             <tr>
                 <td>@lp</td>
@@ -19,8 +23,13 @@
                 <td>@film.Director</td>
                 <td>@film.Year</td>
                 <td class="text-end">@film.Price</td>
+                <td>
+                    <a class="btn btn-danger" 
+                    asp-action="Delete" 
+                    asp-route-id="@film.Id">Usuń</a>
+                </td>
             </tr>
         }
     </tbody>
-    
+
 </table>

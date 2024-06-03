@@ -3,23 +3,23 @@
 <h2>Dodawanie Filmu</h2>
 
 <form method="post">
-    <div class="row">
-        <label class="col-3" asp-for="@Model.Title"></label>
+    <div class="row m-3">
+        <label class="col-3 text-end" asp-for="@Model.Title"></label>
         <input type="text" asp-for="Title" class="col-6">
         <span class="col-3 text-danger" asp-validation-for="Title"></span>
     </div>
-        <div class="row">
-        <label class="col-3" asp-for="@Model.Director"></label>
+    <div class="row m-3">
+        <label class="col-3 text-end" asp-for="@Model.Director"></label>
         <input type="text" asp-for="Director" class="col-6">
         <span class="col-3 text-danger" asp-validation-for="Director"></span>
     </div>
-        <div class="row">
-        <label class="col-3" asp-for="@Model.Year"></label>
+    <div class="row m-3">
+        <label class="col-3 text-end" asp-for="@Model.Year"></label>
         <input type="text" asp-for="Year" class="col-6">
         <span class="col-3 text-danger" asp-validation-for="Year"></span>
     </div>
-        <div class="row">
-        <label class="col-3" asp-for="@Model.Price"></label>
+    <div class="row m-3">
+        <label class="col-3 text-end" asp-for="@Model.Price"></label>
         <input type="number" asp-for="Price" class="col-6" min="0" step="0.01">
         <span class="col-3 text-danger" asp-validation-for="Price"></span>
     </div>
