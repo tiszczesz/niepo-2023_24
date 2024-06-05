@@ -25,7 +25,9 @@ public class BooksRepo
                     Price = rd.GetDecimal(3),
                 });
             }
+            connection.Close();
         }
+        
         return books;        
     }
     public void Delete(int? id){
@@ -35,6 +37,7 @@ public class BooksRepo
             command.CommandText = $"DELETE FROM books WHERE id={id}";
             connection.Open();
             command.ExecuteNonQuery();
+            connection.Close();
         }
     }
 }
