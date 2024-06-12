@@ -1,5 +1,9 @@
 const btns = document.querySelectorAll('button');
 const forms = document.querySelectorAll('.form');
+const inputs = document.querySelectorAll('input[type=text]');
+const progress = document.querySelector('.progress');
+progress.style.width = '0%';
+let current = 0;
 showOnly(forms[0]);
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -18,6 +22,17 @@ btns.forEach((btn) => {
                 break;
 
         }
+    });
+});
+inputs.forEach((input) => {
+    input.addEventListener('focus', (e) => {
+        if (current <= 75) {
+            current += 25
+            progress.style.width = `${current}%`;
+            console.log(current);
+            console.log(progress.style.width);
+        }
+
     });
 });
 function showOnly(elem) {

@@ -43,3 +43,7 @@ nav button {
   width: 100%;
   border: solid 1px black;
 }
+.progress {
+  background-color: rgb(106, 140, 167);
+  height: 100%;
+}
