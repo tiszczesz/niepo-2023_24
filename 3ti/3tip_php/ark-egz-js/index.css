@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+aside.left {
+  width: 25%;
+  background-color: bisque;
+}
+aside.right {
+  width: 75%;
+}
+.container {
+  display: flex;
+  height: 540px;
+}
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: burlywood;
+}
+header {
+  width: 75%;
+  text-align: center;
+  padding: 30px;
+  text-transform: capitalize;
+  background-color: lightblue;
+}
+nav button {
+  padding: 10px;
+  width: 20%;
+  margin: 10px;
+  background-color: blue;
+  color: aliceblue;
+}
+.form {
+  width: 100%;
+  border: solid 1px black;
+  height: 380px;
+  padding: 20px;
+}
+
+.bar {
+  height: 20px;
+  width: 100%;
+  border: solid 1px black;
+}
+.progress {
+  background-color: rgb(106, 140, 167);
+  height: 100%;
+}

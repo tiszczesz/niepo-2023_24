@@ -12,6 +12,7 @@ public class Student
     public string? FirstName { get; set; }
 
     [DisplayName("Podaj nazwisko")]
+   
     [Required(ErrorMessage = "Musisz podać nazwisko")]
     public string? LastName { get; set; }
 

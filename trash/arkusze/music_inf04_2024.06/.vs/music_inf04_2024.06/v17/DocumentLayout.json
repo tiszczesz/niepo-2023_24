@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|solutionrelative:SongItem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|E:\\egzaminy\\!!!Aktualne programista egzamin ee.09 inf03 inf04\\2024_06_inf04\\egzamin inf04\\Data.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItemsRepo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AA881100-08AE-4A1C-A6B7-14F975DAE2DC}|music_inf04_2024.06.vcxproj|solutionrelative:SongItemsRepo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Data.txt",
+              "DocumentMoniker": "E:\\egzaminy\\!!!Aktualne programista egzamin ee.09 inf03 inf04\\2024_06_inf04\\egzamin inf04\\Data.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\egzaminy\\!!!Aktualne programista egzamin ee.09 inf03 inf04\\2024_06_inf04\\egzamin inf04\\Data.txt",
+              "ToolTip": "E:\\egzaminy\\!!!Aktualne programista egzamin ee.09 inf03 inf04\\2024_06_inf04\\egzamin inf04\\Data.txt",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\egzaminy\\!!!Aktualne programista egzamin ee.09 inf03 inf04\\2024_06_inf04\\egzamin inf04\\Data.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-17T06:58:10Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SongItemsRepo.h",
+              "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItemsRepo.h",
+              "RelativeDocumentMoniker": "SongItemsRepo.h",
+              "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItemsRepo.h",
+              "RelativeToolTip": "SongItemsRepo.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T06:30:23.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SongItem.h",
+              "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItem.h",
+              "RelativeDocumentMoniker": "SongItem.h",
+              "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\SongItem.h",
+              "RelativeToolTip": "SongItem.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-17T06:25:54.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "E:\\tools\\GitHub\\niepo 2023_24\\trash\\arkusze\\music_inf04_2024.06\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-17T06:22:41.923Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
