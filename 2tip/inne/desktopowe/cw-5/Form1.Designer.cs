@@ -68,7 +68,7 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
-            openFileDialog1.Filter = "pliki json | *.json | wszystkie pliki | *.*";
+            openFileDialog1.Filter = "pliki json |*.json| wszystkie pliki |*.*";
             // 
             // Form1
             // 

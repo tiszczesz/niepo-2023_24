@@ -14,8 +14,13 @@ namespace cw_5
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                
                 _moviesRepo = new MoviesRepo(openFileDialog1.FileName);
-
+                dataGridView1.DataSource = _moviesRepo.Movies;
+                dataGridView1.Columns["Id"].Visible = false;
+                dataGridView1.ReadOnly = true;
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dataGridView1.Columns["Length"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.BottomRight;
             }
         }
     }
