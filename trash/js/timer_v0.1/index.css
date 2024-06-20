@@ -1,9 +1,12 @@
 #timer {
-    font-size: 3rem !important;
-    color: green;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    border: solid 1px grey;
-    margin: auto;
+  font-size: 3rem !important;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border: solid 1px grey;
+  margin: auto;
+  background-color: lightgrey;
+  border-radius: 10px;
+  box-shadow: 20px 5px 5px gray;
 }
