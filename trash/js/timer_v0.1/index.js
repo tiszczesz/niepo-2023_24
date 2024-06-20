@@ -1,11 +1,7 @@
-// Krok 1: Definiowanie dwóch dat
-let data1 = new Date('2024-06-24');
-
-// Krok 2: Obliczanie różnicy w milisekundach
 
 const counter = {
   infoText: ' Czas do wystąpienia zdarzenia',
-  endDate: new Date('2024-06-21:13:35:00:00'),
+  endDate: new Date('2024-06-21T10:00:00'),
   //   endDate,
   generText: function (text, time) {
     if (time == 1) return text + 'a';
@@ -16,20 +12,20 @@ const counter = {
     let differenceMS = this.endDate - currentDate;
     if (differenceMS <= 0)
       return `${this.infoText} już się odbyło!`;
-    const sekunda = 1000;
-    const minuta = sekunda * 60;
-    const godzina = minuta * 60;
-    const dzień = godzina * 24;
-    let dni = Math.floor(differenceMS / dzień);
-    const dniText = dni > 1 ? "dni" : "dzień";
-    differenceMS %= dzień;
-    let godziny = Math.floor(differenceMS / godzina);
-    differenceMS %= godzina;
-    let minuty = Math.floor(differenceMS / minuta);
-    differenceMS %= minuta;
-    let sekundy = Math.floor(differenceMS / sekunda);
-    return `${this.infoText}:<br> ${dni} ${dniText}, ${godziny} ${this.generText("godzin", godziny)},
-               ${minuty} ${this.generText("minut", minuty)}, ${sekundy} ${this.generText("sekund", sekundy)}`;
+    const sec = 1000;
+    const min = sec * 60;
+    const hour = min * 60;
+    const day = hour * 24;
+    let days = Math.floor(differenceMS / day);
+    const dayText = days !== 1 ? "dni" : "dzień";
+    differenceMS %= day;
+    let hours = Math.floor(differenceMS / hour);
+    differenceMS %= hour;
+    let minutes = Math.floor(differenceMS / min);
+    differenceMS %= min;
+    let secs = Math.floor(differenceMS / sec);
+    return `${this.infoText}:<br> ${days} ${dayText}, ${hours} ${this.generText("godzin", hours)},
+               ${minutes} ${this.generText("minut", minutes)}, ${secs} ${this.generText("sekund", secs)}`;
   },
 };
 function updateTimer() {
