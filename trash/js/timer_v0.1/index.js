@@ -5,9 +5,11 @@ let data1 = new Date('2024-06-24');
 
 const counter = {
   infoText: ' Czas do wystąpienia zdarzenia',
+  endDate,
+  startDate: new Date(),
   //   endDate,
-  differentBetween: function (endDate, startDate) {
-    let differenceMS = endDate - startDate;
+  differentBetween: function () {
+    let differenceMS = this.endDate - this.startDate;
     if (differenceMS <= 0)
       return 'Data początkowa nie może być późniejsza niż końcowa';
     const sekunda = 1000;
@@ -25,10 +27,7 @@ const counter = {
   },
 };
 function updateTimer() {
-  document.querySelector('#timer').innerText = counter.differentBetween(
-    data1,
-    new Date()
-  );
+  document.querySelector('#timer').innerText = counter.differentBetween();
 }
 updateTimer();
 setInterval(() => {
