@@ -1,7 +1,7 @@
 
 const counter = {
   infoText: ' Czas do wystąpienia zdarzenia',
-  endDate: new Date('2024-06-21T10:00:00'),
+  endDate: new Date('2024-06-09T10:00:00'),
   //   endDate,
   generText: function (text, time) {
     if (time == 1) return text + 'a';
