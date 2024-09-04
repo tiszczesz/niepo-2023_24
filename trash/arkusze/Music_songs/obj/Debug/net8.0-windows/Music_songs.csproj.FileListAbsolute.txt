@@ -1,0 +1,17 @@
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\bin\Debug\net8.0-windows\Music_songs.exe
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\bin\Debug\net8.0-windows\Music_songs.deps.json
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\bin\Debug\net8.0-windows\Music_songs.runtimeconfig.json
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\bin\Debug\net8.0-windows\Music_songs.dll
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\bin\Debug\net8.0-windows\Music_songs.pdb
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.Form1.resources
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.csproj.GenerateResource.cache
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.GeneratedMSBuildEditorConfig.editorconfig
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.AssemblyInfoInputs.cache
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.AssemblyInfo.cs
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.csproj.CoreCompileInputs.cache
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.sourcelink.json
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.dll
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\refint\Music_songs.dll
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.pdb
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\Music_songs.genruntimeconfig.cache
+E:\tools\GitHub\niepo 2023_24\trash\arkusze\Music_songs\obj\Debug\net8.0-windows\ref\Music_songs.dll
